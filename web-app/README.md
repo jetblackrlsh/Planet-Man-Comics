@@ -2,7 +2,7 @@
 
 This directory is a static browser reader for the Planet-Man Comics repository.
 
-Open `web-app/index.html` through a local static server, or publish the repository with GitHub Pages and visit:
+Open `web-app/index.html` through a local static server, or publish the repository with the included GitHub Pages workflow and visit:
 
 ```text
 https://jetblackrlsh.github.io/Planet-Man-Comics/web-app/

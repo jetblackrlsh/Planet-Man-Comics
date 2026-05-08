@@ -1,0 +1,73 @@
+name: Deploy Planet-Man Comics Reader
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Build static artifact
+        run: |
+          set -euo pipefail
+
+          mkdir -p _site
+          cp .nojekyll index.html _site/
+          cp -R web-app _site/web-app
+
+          mkdir -p "_site/Reference Images"
+          cp "Reference Images/00-series-logo-wordmark.png" "_site/Reference Images/"
+          cp "Reference Images/40-circuit-world-reference.png" "_site/Reference Images/"
+
+          for issue_dir in intro-issue issue-*; do
+            if [ ! -d "$issue_dir/assets/comic-pages" ]; then
+              continue
+            fi
+
+            mkdir -p "_site/$issue_dir/assets"
+            cp -R "$issue_dir/assets/comic-pages" "_site/$issue_dir/assets/comic-pages"
+
+            if [ -d "$issue_dir/output/pdf" ]; then
+              mkdir -p "_site/$issue_dir/output"
+              cp -R "$issue_dir/output/pdf" "_site/$issue_dir/output/pdf"
+            fi
+          done
+
+          for volume_dir in "Planet-Man Volume One" "Planet-Man Volume Two"; do
+            if [ ! -d "$volume_dir" ]; then
+              continue
+            fi
+
+            mkdir -p "_site/$volume_dir"
+            find "$volume_dir" -maxdepth 1 -name "*.pdf" -exec cp {} "_site/$volume_dir/" \;
+          done
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
