@@ -8,7 +8,7 @@ const state = {
   catalog: [],
   selectedSlug: "",
   selectedPage: 0,
-  mode: "single",
+  mode: "flow",
   query: "",
 };
 
