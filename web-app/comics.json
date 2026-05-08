@@ -1,0 +1,632 @@
+[
+  {
+    "slug": "intro-issue",
+    "number": 1,
+    "title": "First Orbit",
+    "summary": "Planet-Man's introductory issue.",
+    "cover": "../intro-issue/assets/comic-pages/page-01-cover.png",
+    "pdf": "../intro-issue/output/pdf/planet-man-first-orbit.pdf",
+    "pages": [
+      {
+        "label": "Cover",
+        "src": "../intro-issue/assets/comic-pages/page-01-cover.png"
+      },
+      {
+        "label": "Page 2",
+        "src": "../intro-issue/assets/comic-pages/page-02.png"
+      },
+      {
+        "label": "Page 3",
+        "src": "../intro-issue/assets/comic-pages/page-03.png"
+      },
+      {
+        "label": "Page 4",
+        "src": "../intro-issue/assets/comic-pages/page-04.png"
+      },
+      {
+        "label": "Page 5",
+        "src": "../intro-issue/assets/comic-pages/page-05.png"
+      },
+      {
+        "label": "Page 6",
+        "src": "../intro-issue/assets/comic-pages/page-06.png"
+      },
+      {
+        "label": "Page 7",
+        "src": "../intro-issue/assets/comic-pages/page-07.png"
+      },
+      {
+        "label": "Page 8",
+        "src": "../intro-issue/assets/comic-pages/page-08.png"
+      }
+    ]
+  },
+  {
+    "slug": "issue-02-disastero",
+    "number": 2,
+    "title": "Disastero",
+    "summary": "Planet-Man faces an existential super-villain known as a walking apocalypse.",
+    "cover": "../issue-02-disastero/assets/comic-pages/page-01-cover.png",
+    "pdf": "../issue-02-disastero/output/pdf/planet-man-disastero.pdf",
+    "pages": [
+      {
+        "label": "Cover",
+        "src": "../issue-02-disastero/assets/comic-pages/page-01-cover.png"
+      },
+      {
+        "label": "Page 2",
+        "src": "../issue-02-disastero/assets/comic-pages/page-02.png"
+      },
+      {
+        "label": "Page 3",
+        "src": "../issue-02-disastero/assets/comic-pages/page-03.png"
+      },
+      {
+        "label": "Page 4",
+        "src": "../issue-02-disastero/assets/comic-pages/page-04.png"
+      },
+      {
+        "label": "Page 5",
+        "src": "../issue-02-disastero/assets/comic-pages/page-05.png"
+      },
+      {
+        "label": "Page 6",
+        "src": "../issue-02-disastero/assets/comic-pages/page-06.png"
+      },
+      {
+        "label": "Page 7",
+        "src": "../issue-02-disastero/assets/comic-pages/page-07.png"
+      },
+      {
+        "label": "Page 8",
+        "src": "../issue-02-disastero/assets/comic-pages/page-08.png"
+      }
+    ]
+  },
+  {
+    "slug": "issue-03-scalard",
+    "number": 3,
+    "title": "Scalard",
+    "summary": "Planet-Man meets Scalard.",
+    "cover": "../issue-03-scalard/assets/comic-pages/page-01-cover.png",
+    "pdf": "../issue-03-scalard/output/pdf/planet-man-scalard.pdf",
+    "pages": [
+      {
+        "label": "Cover",
+        "src": "../issue-03-scalard/assets/comic-pages/page-01-cover.png"
+      },
+      {
+        "label": "Page 2",
+        "src": "../issue-03-scalard/assets/comic-pages/page-02.png"
+      },
+      {
+        "label": "Page 3",
+        "src": "../issue-03-scalard/assets/comic-pages/page-03.png"
+      },
+      {
+        "label": "Page 4",
+        "src": "../issue-03-scalard/assets/comic-pages/page-04.png"
+      },
+      {
+        "label": "Page 5",
+        "src": "../issue-03-scalard/assets/comic-pages/page-05.png"
+      },
+      {
+        "label": "Page 6",
+        "src": "../issue-03-scalard/assets/comic-pages/page-06.png"
+      },
+      {
+        "label": "Page 7",
+        "src": "../issue-03-scalard/assets/comic-pages/page-07.png"
+      },
+      {
+        "label": "Page 8",
+        "src": "../issue-03-scalard/assets/comic-pages/page-08.png"
+      }
+    ]
+  },
+  {
+    "slug": "issue-04-madame-multiverse",
+    "number": 4,
+    "title": "Madame Multiverse",
+    "summary": "Madame Multiverse arrives as the villain.",
+    "cover": "../issue-04-madame-multiverse/assets/comic-pages/page-01-cover.png",
+    "pdf": "../issue-04-madame-multiverse/output/pdf/planet-man-madame-multiverse.pdf",
+    "pages": [
+      {
+        "label": "Cover",
+        "src": "../issue-04-madame-multiverse/assets/comic-pages/page-01-cover.png"
+      },
+      {
+        "label": "Page 2",
+        "src": "../issue-04-madame-multiverse/assets/comic-pages/page-02.png"
+      },
+      {
+        "label": "Page 3",
+        "src": "../issue-04-madame-multiverse/assets/comic-pages/page-03.png"
+      },
+      {
+        "label": "Page 4",
+        "src": "../issue-04-madame-multiverse/assets/comic-pages/page-04.png"
+      },
+      {
+        "label": "Page 5",
+        "src": "../issue-04-madame-multiverse/assets/comic-pages/page-05.png"
+      },
+      {
+        "label": "Page 6",
+        "src": "../issue-04-madame-multiverse/assets/comic-pages/page-06.png"
+      },
+      {
+        "label": "Page 7",
+        "src": "../issue-04-madame-multiverse/assets/comic-pages/page-07.png"
+      },
+      {
+        "label": "Page 8",
+        "src": "../issue-04-madame-multiverse/assets/comic-pages/page-08.png"
+      }
+    ]
+  },
+  {
+    "slug": "issue-05-dream-reaper",
+    "number": 5,
+    "title": "Dream Reaper",
+    "summary": "Planet-Man faces a threat inside a dream.",
+    "cover": "../issue-05-dream-reaper/assets/comic-pages/page-01-cover.png",
+    "pdf": "../issue-05-dream-reaper/output/pdf/planet-man-dream-reaper.pdf",
+    "pages": [
+      {
+        "label": "Cover",
+        "src": "../issue-05-dream-reaper/assets/comic-pages/page-01-cover.png"
+      },
+      {
+        "label": "Page 2",
+        "src": "../issue-05-dream-reaper/assets/comic-pages/page-02.png"
+      },
+      {
+        "label": "Page 3",
+        "src": "../issue-05-dream-reaper/assets/comic-pages/page-03.png"
+      },
+      {
+        "label": "Page 4",
+        "src": "../issue-05-dream-reaper/assets/comic-pages/page-04.png"
+      },
+      {
+        "label": "Page 5",
+        "src": "../issue-05-dream-reaper/assets/comic-pages/page-05.png"
+      },
+      {
+        "label": "Page 6",
+        "src": "../issue-05-dream-reaper/assets/comic-pages/page-06.png"
+      },
+      {
+        "label": "Page 7",
+        "src": "../issue-05-dream-reaper/assets/comic-pages/page-07.png"
+      },
+      {
+        "label": "Page 8",
+        "src": "../issue-05-dream-reaper/assets/comic-pages/page-08.png"
+      }
+    ]
+  },
+  {
+    "slug": "issue-06-shrink-scope-bank-heist",
+    "number": 6,
+    "title": "Nothing Much",
+    "summary": "Shrink-Scope's powers take focus during a bank-heist issue.",
+    "cover": "../issue-06-shrink-scope-bank-heist/assets/comic-pages/page-01-cover.png",
+    "pdf": "../issue-06-shrink-scope-bank-heist/output/pdf/planet-man-nothing-much.pdf",
+    "pages": [
+      {
+        "label": "Cover",
+        "src": "../issue-06-shrink-scope-bank-heist/assets/comic-pages/page-01-cover.png"
+      },
+      {
+        "label": "Page 2",
+        "src": "../issue-06-shrink-scope-bank-heist/assets/comic-pages/page-02.png"
+      },
+      {
+        "label": "Page 3",
+        "src": "../issue-06-shrink-scope-bank-heist/assets/comic-pages/page-03.png"
+      },
+      {
+        "label": "Page 4",
+        "src": "../issue-06-shrink-scope-bank-heist/assets/comic-pages/page-04.png"
+      },
+      {
+        "label": "Page 5",
+        "src": "../issue-06-shrink-scope-bank-heist/assets/comic-pages/page-05.png"
+      },
+      {
+        "label": "Page 6",
+        "src": "../issue-06-shrink-scope-bank-heist/assets/comic-pages/page-06.png"
+      },
+      {
+        "label": "Page 7",
+        "src": "../issue-06-shrink-scope-bank-heist/assets/comic-pages/page-07.png"
+      },
+      {
+        "label": "Page 8",
+        "src": "../issue-06-shrink-scope-bank-heist/assets/comic-pages/page-08.png"
+      }
+    ]
+  },
+  {
+    "slug": "issue-07-everything-will-be-okay",
+    "number": 7,
+    "title": "Everything Will Be Okay",
+    "summary": "A quiet, emotionally charged Planet-Man issue.",
+    "cover": "../issue-07-everything-will-be-okay/assets/comic-pages/page-01-cover.png",
+    "pdf": "../issue-07-everything-will-be-okay/output/pdf/planet-man-everything-will-be-okay.pdf",
+    "pages": [
+      {
+        "label": "Cover",
+        "src": "../issue-07-everything-will-be-okay/assets/comic-pages/page-01-cover.png"
+      },
+      {
+        "label": "Page 2",
+        "src": "../issue-07-everything-will-be-okay/assets/comic-pages/page-02.png"
+      },
+      {
+        "label": "Page 3",
+        "src": "../issue-07-everything-will-be-okay/assets/comic-pages/page-03.png"
+      },
+      {
+        "label": "Page 4",
+        "src": "../issue-07-everything-will-be-okay/assets/comic-pages/page-04.png"
+      },
+      {
+        "label": "Page 5",
+        "src": "../issue-07-everything-will-be-okay/assets/comic-pages/page-05.png"
+      },
+      {
+        "label": "Page 6",
+        "src": "../issue-07-everything-will-be-okay/assets/comic-pages/page-06.png"
+      },
+      {
+        "label": "Page 7",
+        "src": "../issue-07-everything-will-be-okay/assets/comic-pages/page-07.png"
+      },
+      {
+        "label": "Page 8",
+        "src": "../issue-07-everything-will-be-okay/assets/comic-pages/page-08.png"
+      }
+    ]
+  },
+  {
+    "slug": "issue-08-machine-monarch",
+    "number": 8,
+    "title": "Machine Monarch",
+    "summary": "Machine Monarch enters Planet-Man's world.",
+    "cover": "../issue-08-machine-monarch/assets/comic-pages/page-01-cover.png",
+    "pdf": "../issue-08-machine-monarch/output/pdf/planet-man-machine-monarch.pdf",
+    "pages": [
+      {
+        "label": "Cover",
+        "src": "../issue-08-machine-monarch/assets/comic-pages/page-01-cover.png"
+      },
+      {
+        "label": "Page 2",
+        "src": "../issue-08-machine-monarch/assets/comic-pages/page-02.png"
+      },
+      {
+        "label": "Page 3",
+        "src": "../issue-08-machine-monarch/assets/comic-pages/page-03.png"
+      },
+      {
+        "label": "Page 4",
+        "src": "../issue-08-machine-monarch/assets/comic-pages/page-04.png"
+      },
+      {
+        "label": "Page 5",
+        "src": "../issue-08-machine-monarch/assets/comic-pages/page-05.png"
+      },
+      {
+        "label": "Page 6",
+        "src": "../issue-08-machine-monarch/assets/comic-pages/page-06.png"
+      },
+      {
+        "label": "Page 7",
+        "src": "../issue-08-machine-monarch/assets/comic-pages/page-07.png"
+      },
+      {
+        "label": "Page 8",
+        "src": "../issue-08-machine-monarch/assets/comic-pages/page-08.png"
+      }
+    ]
+  },
+  {
+    "slug": "issue-09-hoppette",
+    "number": 9,
+    "title": "Hoppette",
+    "summary": "Planet-Man and Shrink-Scope return from a mission and meet Hoppette.",
+    "cover": "../issue-09-hoppette/assets/comic-pages/page-01-cover.png",
+    "pdf": "../issue-09-hoppette/output/pdf/planet-man-hoppette.pdf",
+    "pages": [
+      {
+        "label": "Cover",
+        "src": "../issue-09-hoppette/assets/comic-pages/page-01-cover.png"
+      },
+      {
+        "label": "Page 2",
+        "src": "../issue-09-hoppette/assets/comic-pages/page-02.png"
+      },
+      {
+        "label": "Page 3",
+        "src": "../issue-09-hoppette/assets/comic-pages/page-03.png"
+      },
+      {
+        "label": "Page 4",
+        "src": "../issue-09-hoppette/assets/comic-pages/page-04.png"
+      },
+      {
+        "label": "Page 5",
+        "src": "../issue-09-hoppette/assets/comic-pages/page-05.png"
+      },
+      {
+        "label": "Page 6",
+        "src": "../issue-09-hoppette/assets/comic-pages/page-06.png"
+      },
+      {
+        "label": "Page 7",
+        "src": "../issue-09-hoppette/assets/comic-pages/page-07.png"
+      },
+      {
+        "label": "Page 8",
+        "src": "../issue-09-hoppette/assets/comic-pages/page-08.png"
+      }
+    ]
+  },
+  {
+    "slug": "issue-10-blizzard-redesignation",
+    "number": 10,
+    "title": "Blizzard Redesignation",
+    "summary": "Blizzard steps into Planet-Man's ongoing story.",
+    "cover": "../issue-10-blizzard-redesignation/assets/comic-pages/page-01-cover.png",
+    "pdf": "../issue-10-blizzard-redesignation/output/pdf/planet-man-blizzard-redesignation.pdf",
+    "pages": [
+      {
+        "label": "Cover",
+        "src": "../issue-10-blizzard-redesignation/assets/comic-pages/page-01-cover.png"
+      },
+      {
+        "label": "Page 2",
+        "src": "../issue-10-blizzard-redesignation/assets/comic-pages/page-02.png"
+      },
+      {
+        "label": "Page 3",
+        "src": "../issue-10-blizzard-redesignation/assets/comic-pages/page-03.png"
+      },
+      {
+        "label": "Page 4",
+        "src": "../issue-10-blizzard-redesignation/assets/comic-pages/page-04.png"
+      },
+      {
+        "label": "Page 5",
+        "src": "../issue-10-blizzard-redesignation/assets/comic-pages/page-05.png"
+      },
+      {
+        "label": "Page 6",
+        "src": "../issue-10-blizzard-redesignation/assets/comic-pages/page-06.png"
+      },
+      {
+        "label": "Page 7",
+        "src": "../issue-10-blizzard-redesignation/assets/comic-pages/page-07.png"
+      },
+      {
+        "label": "Page 8",
+        "src": "../issue-10-blizzard-redesignation/assets/comic-pages/page-08.png"
+      }
+    ]
+  },
+  {
+    "slug": "issue-11-lily-pad-lesson",
+    "number": 11,
+    "title": "Lily Pad Lesson",
+    "summary": "A new lesson expands Planet-Man's world.",
+    "cover": "../issue-11-lily-pad-lesson/assets/comic-pages/page-01-cover.png",
+    "pdf": "../issue-11-lily-pad-lesson/output/pdf/planet-man-lily-pad-lesson.pdf",
+    "pages": [
+      {
+        "label": "Cover",
+        "src": "../issue-11-lily-pad-lesson/assets/comic-pages/page-01-cover.png"
+      },
+      {
+        "label": "Page 2",
+        "src": "../issue-11-lily-pad-lesson/assets/comic-pages/page-02.png"
+      },
+      {
+        "label": "Page 3",
+        "src": "../issue-11-lily-pad-lesson/assets/comic-pages/page-03.png"
+      },
+      {
+        "label": "Page 4",
+        "src": "../issue-11-lily-pad-lesson/assets/comic-pages/page-04.png"
+      },
+      {
+        "label": "Page 5",
+        "src": "../issue-11-lily-pad-lesson/assets/comic-pages/page-05.png"
+      },
+      {
+        "label": "Page 6",
+        "src": "../issue-11-lily-pad-lesson/assets/comic-pages/page-06.png"
+      },
+      {
+        "label": "Page 7",
+        "src": "../issue-11-lily-pad-lesson/assets/comic-pages/page-07.png"
+      },
+      {
+        "label": "Page 8",
+        "src": "../issue-11-lily-pad-lesson/assets/comic-pages/page-08.png"
+      }
+    ]
+  },
+  {
+    "slug": "issue-12-hop-incoming",
+    "number": 12,
+    "title": "Hop Incoming",
+    "summary": "Hoppette's world pushes into the series.",
+    "cover": "../issue-12-hop-incoming/assets/comic-pages/page-01-cover.png",
+    "pdf": "../issue-12-hop-incoming/output/pdf/planet-man-hop-incoming.pdf",
+    "pages": [
+      {
+        "label": "Cover",
+        "src": "../issue-12-hop-incoming/assets/comic-pages/page-01-cover.png"
+      },
+      {
+        "label": "Page 2",
+        "src": "../issue-12-hop-incoming/assets/comic-pages/page-02.png"
+      },
+      {
+        "label": "Page 3",
+        "src": "../issue-12-hop-incoming/assets/comic-pages/page-03.png"
+      },
+      {
+        "label": "Page 4",
+        "src": "../issue-12-hop-incoming/assets/comic-pages/page-04.png"
+      },
+      {
+        "label": "Page 5",
+        "src": "../issue-12-hop-incoming/assets/comic-pages/page-05.png"
+      },
+      {
+        "label": "Page 6",
+        "src": "../issue-12-hop-incoming/assets/comic-pages/page-06.png"
+      },
+      {
+        "label": "Page 7",
+        "src": "../issue-12-hop-incoming/assets/comic-pages/page-07.png"
+      },
+      {
+        "label": "Page 8",
+        "src": "../issue-12-hop-incoming/assets/comic-pages/page-08.png"
+      }
+    ]
+  },
+  {
+    "slug": "issue-13-shock-step",
+    "number": 13,
+    "title": "Shock Step",
+    "summary": "Shock-Step enters with electricity and speed.",
+    "cover": "../issue-13-shock-step/assets/comic-pages/page-01-cover.png",
+    "pdf": "../issue-13-shock-step/output/pdf/planet-man-shock-step.pdf",
+    "pages": [
+      {
+        "label": "Cover",
+        "src": "../issue-13-shock-step/assets/comic-pages/page-01-cover.png"
+      },
+      {
+        "label": "Page 2",
+        "src": "../issue-13-shock-step/assets/comic-pages/page-02.png"
+      },
+      {
+        "label": "Page 3",
+        "src": "../issue-13-shock-step/assets/comic-pages/page-03.png"
+      },
+      {
+        "label": "Page 4",
+        "src": "../issue-13-shock-step/assets/comic-pages/page-04.png"
+      },
+      {
+        "label": "Page 5",
+        "src": "../issue-13-shock-step/assets/comic-pages/page-05.png"
+      },
+      {
+        "label": "Page 6",
+        "src": "../issue-13-shock-step/assets/comic-pages/page-06.png"
+      },
+      {
+        "label": "Page 7",
+        "src": "../issue-13-shock-step/assets/comic-pages/page-07.png"
+      },
+      {
+        "label": "Page 8",
+        "src": "../issue-13-shock-step/assets/comic-pages/page-08.png"
+      }
+    ]
+  },
+  {
+    "slug": "issue-14-bruiser",
+    "number": 14,
+    "title": "Bruiser",
+    "summary": "Bruiser brings heavy impact to Planet-Man's HQ.",
+    "cover": "../issue-14-bruiser/assets/comic-pages/page-01-cover.png",
+    "pdf": "../issue-14-bruiser/output/pdf/planet-man-bruiser.pdf",
+    "pages": [
+      {
+        "label": "Cover",
+        "src": "../issue-14-bruiser/assets/comic-pages/page-01-cover.png"
+      },
+      {
+        "label": "Page 2",
+        "src": "../issue-14-bruiser/assets/comic-pages/page-02.png"
+      },
+      {
+        "label": "Page 3",
+        "src": "../issue-14-bruiser/assets/comic-pages/page-03.png"
+      },
+      {
+        "label": "Page 4",
+        "src": "../issue-14-bruiser/assets/comic-pages/page-04.png"
+      },
+      {
+        "label": "Page 5",
+        "src": "../issue-14-bruiser/assets/comic-pages/page-05.png"
+      },
+      {
+        "label": "Page 6",
+        "src": "../issue-14-bruiser/assets/comic-pages/page-06.png"
+      },
+      {
+        "label": "Page 7",
+        "src": "../issue-14-bruiser/assets/comic-pages/page-07.png"
+      },
+      {
+        "label": "Page 8",
+        "src": "../issue-14-bruiser/assets/comic-pages/page-08.png"
+      }
+    ]
+  },
+  {
+    "slug": "issue-15-circuit-divinity",
+    "number": 15,
+    "title": "Circuit Divinity",
+    "summary": "Machine Monarch escapes into a living circuit world.",
+    "cover": "../issue-15-circuit-divinity/assets/comic-pages/page-01-cover.png",
+    "pdf": "../issue-15-circuit-divinity/output/pdf/planet-man-circuit-divinity.pdf",
+    "pages": [
+      {
+        "label": "Cover",
+        "src": "../issue-15-circuit-divinity/assets/comic-pages/page-01-cover.png"
+      },
+      {
+        "label": "Page 2",
+        "src": "../issue-15-circuit-divinity/assets/comic-pages/page-02.png"
+      },
+      {
+        "label": "Page 3",
+        "src": "../issue-15-circuit-divinity/assets/comic-pages/page-03.png"
+      },
+      {
+        "label": "Page 4",
+        "src": "../issue-15-circuit-divinity/assets/comic-pages/page-04.png"
+      },
+      {
+        "label": "Page 5",
+        "src": "../issue-15-circuit-divinity/assets/comic-pages/page-05.png"
+      },
+      {
+        "label": "Page 6",
+        "src": "../issue-15-circuit-divinity/assets/comic-pages/page-06.png"
+      },
+      {
+        "label": "Page 7",
+        "src": "../issue-15-circuit-divinity/assets/comic-pages/page-07.png"
+      },
+      {
+        "label": "Page 8",
+        "src": "../issue-15-circuit-divinity/assets/comic-pages/page-08.png"
+      }
+    ]
+  }
+]

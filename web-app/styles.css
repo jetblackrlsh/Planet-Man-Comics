@@ -1,0 +1,591 @@
+:root {
+  color-scheme: dark;
+  --bg: #050806;
+  --bg-2: #0a110d;
+  --panel: rgba(10, 17, 13, 0.88);
+  --panel-strong: rgba(15, 25, 20, 0.96);
+  --text: #edf8ef;
+  --muted: #9eb0a4;
+  --faint: #63736a;
+  --line: rgba(147, 255, 181, 0.2);
+  --line-strong: rgba(155, 255, 190, 0.42);
+  --green: #77ff9a;
+  --green-strong: #c2ffd0;
+  --copper: #d6984b;
+  --danger: #ff6b61;
+  --shadow: 0 24px 70px rgba(0, 0, 0, 0.46);
+  --radius: 8px;
+  --page-max: 1560px;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+html {
+  min-width: 320px;
+  background: var(--bg);
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  color: var(--text);
+  background:
+    linear-gradient(180deg, rgba(5, 8, 6, 0.24), #050806 42rem),
+    image-set(url("../Reference%20Images/40-circuit-world-reference.png") 1x);
+  background-attachment: fixed;
+  background-position: center top;
+  background-size: cover;
+}
+
+body::before {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  content: "";
+  background:
+    linear-gradient(90deg, rgba(5, 8, 6, 0.9) 0%, rgba(5, 8, 6, 0.48) 45%, rgba(5, 8, 6, 0.82) 100%),
+    repeating-linear-gradient(90deg, rgba(119, 255, 154, 0.05) 0 1px, transparent 1px 92px);
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.app-shell {
+  width: min(100%, var(--page-max));
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.masthead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  min-height: 72px;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  width: min(320px, 58vw);
+}
+
+.brand img {
+  display: block;
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 10px 22px rgba(0, 0, 0, 0.55));
+}
+
+.top-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.top-actions a,
+.segmented button,
+.reader-buttons button,
+.page-step {
+  min-height: 40px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  color: var(--text);
+  background: rgba(9, 16, 12, 0.78);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.06) inset;
+}
+
+.top-actions a {
+  display: inline-flex;
+  align-items: center;
+  padding: 0 14px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--green-strong);
+}
+
+.top-actions a:hover,
+.top-actions a:focus-visible,
+.segmented button:hover,
+.segmented button:focus-visible,
+.reader-buttons button:hover,
+.reader-buttons button:focus-visible,
+.page-step:hover,
+.page-step:focus-visible {
+  border-color: var(--line-strong);
+  outline: none;
+  background: rgba(21, 37, 29, 0.94);
+}
+
+.reader-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 460px);
+  align-items: end;
+  gap: 28px;
+  min-height: clamp(220px, 30vh, 360px);
+  padding: 52px 0 34px;
+}
+
+.hero-copy h1 {
+  max-width: 780px;
+  margin: 0;
+  font-size: clamp(3rem, 8vw, 7.8rem);
+  line-height: 0.88;
+  letter-spacing: 0;
+  text-shadow: 0 24px 72px rgba(0, 0, 0, 0.68);
+}
+
+.hero-copy p {
+  max-width: 650px;
+  margin: 22px 0 0;
+  color: #d1ded4;
+  font-size: clamp(1rem, 2vw, 1.28rem);
+  line-height: 1.55;
+}
+
+.reader-controls {
+  display: grid;
+  gap: 12px;
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: rgba(7, 12, 9, 0.72);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(18px);
+}
+
+.search-control {
+  display: grid;
+  gap: 8px;
+}
+
+.search-control span,
+.section-heading span,
+.issue-kicker,
+.page-frame figcaption {
+  color: var(--muted);
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.search-control input {
+  width: 100%;
+  min-height: 46px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 0 14px;
+  color: var(--text);
+  background: rgba(2, 5, 3, 0.82);
+  outline: none;
+}
+
+.search-control input:focus {
+  border-color: var(--green);
+  box-shadow: 0 0 0 3px rgba(119, 255, 154, 0.12);
+}
+
+.segmented {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+}
+
+.segmented button {
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+
+.segmented button.active {
+  color: #041307;
+  border-color: var(--green);
+  background: linear-gradient(180deg, var(--green-strong), var(--green));
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: minmax(280px, 360px) minmax(0, 1fr);
+  align-items: start;
+  gap: 20px;
+}
+
+.library-panel,
+.reader-panel {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--panel);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(22px);
+}
+
+.library-panel {
+  position: sticky;
+  top: 16px;
+  max-height: calc(100vh - 32px);
+  overflow: hidden;
+}
+
+.section-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 18px 18px 12px;
+  border-bottom: 1px solid var(--line);
+}
+
+.section-heading h2,
+.reader-topline h2 {
+  margin: 0;
+  font-size: 1.2rem;
+  letter-spacing: 0;
+}
+
+.issue-list {
+  display: grid;
+  gap: 1px;
+  max-height: calc(100vh - 100px);
+  overflow: auto;
+}
+
+.issue-card {
+  display: grid;
+  grid-template-columns: 74px 1fr;
+  gap: 12px;
+  width: 100%;
+  min-height: 104px;
+  border: 0;
+  border-left: 3px solid transparent;
+  padding: 12px 14px 12px 11px;
+  color: inherit;
+  text-align: left;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.issue-card:hover,
+.issue-card:focus-visible {
+  outline: none;
+  background: rgba(119, 255, 154, 0.08);
+}
+
+.issue-card.active {
+  border-left-color: var(--green);
+  background: rgba(119, 255, 154, 0.14);
+}
+
+.issue-cover {
+  width: 74px;
+  aspect-ratio: 4 / 5;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 6px;
+  object-fit: cover;
+  background: #101812;
+}
+
+.issue-meta {
+  display: block;
+  min-width: 0;
+}
+
+.issue-number {
+  display: block;
+  margin: 1px 0 5px;
+  color: var(--green);
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.issue-name {
+  display: block;
+  margin: 0;
+  font-size: 0.98rem;
+  font-weight: 850;
+  line-height: 1.2;
+}
+
+.issue-detail {
+  display: block;
+  margin: 8px 0 0;
+  color: var(--muted);
+  font-size: 0.78rem;
+  line-height: 1.35;
+}
+
+.reader-panel {
+  min-width: 0;
+  padding: 18px;
+}
+
+.reader-topline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  min-height: 58px;
+  margin-bottom: 16px;
+}
+
+.issue-kicker {
+  margin: 0 0 6px;
+  color: var(--green);
+}
+
+.reader-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.reader-buttons button,
+.page-step {
+  display: inline-grid;
+  place-items: center;
+  width: 44px;
+  padding: 0;
+  font-size: 1.65rem;
+  line-height: 1;
+}
+
+.reader-buttons button:disabled,
+.page-step:disabled {
+  cursor: not-allowed;
+  opacity: 0.38;
+}
+
+.page-stage {
+  position: relative;
+  display: grid;
+  place-items: center;
+  min-height: min(72vh, 980px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius);
+  background:
+    linear-gradient(135deg, rgba(119, 255, 154, 0.08), transparent 34%),
+    rgba(0, 0, 0, 0.36);
+  overflow: hidden;
+}
+
+.page-frame {
+  display: grid;
+  gap: 12px;
+  width: min(100%, 760px);
+  margin: 0;
+  padding: 18px;
+}
+
+.page-frame img {
+  display: block;
+  width: 100%;
+  max-height: min(68vh, 920px);
+  border-radius: 6px;
+  object-fit: contain;
+  background: #080d0a;
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.55);
+}
+
+.page-frame figcaption {
+  text-align: center;
+}
+
+.page-step {
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+  transform: translateY(-50%);
+  background: rgba(2, 5, 3, 0.78);
+}
+
+.page-step-left {
+  left: 12px;
+}
+
+.page-step-right {
+  right: 12px;
+}
+
+.thumbnail-row {
+  display: flex;
+  gap: 10px;
+  margin-top: 14px;
+  padding-bottom: 4px;
+  overflow-x: auto;
+}
+
+.thumb-button {
+  flex: 0 0 76px;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  padding: 4px;
+  color: var(--muted);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.thumb-button.active {
+  border-color: var(--green);
+  color: var(--green-strong);
+  background: rgba(119, 255, 154, 0.14);
+}
+
+.thumb-button img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.thumb-button span {
+  display: block;
+  margin-top: 4px;
+  font-size: 0.72rem;
+  font-weight: 800;
+}
+
+.flow-reader {
+  display: grid;
+  justify-items: center;
+  gap: 18px;
+  padding: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius);
+  background: rgba(0, 0, 0, 0.36);
+}
+
+.flow-page {
+  width: min(100%, 760px);
+  margin: 0;
+}
+
+.flow-page img {
+  display: block;
+  width: 100%;
+  border-radius: 6px;
+  box-shadow: 0 22px 55px rgba(0, 0, 0, 0.5);
+}
+
+.flow-page figcaption {
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.empty-state {
+  padding: 32px 18px;
+  color: var(--muted);
+  text-align: center;
+}
+
+@media (max-width: 980px) {
+  .reader-hero,
+  .content-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .library-panel {
+    position: static;
+    max-height: none;
+  }
+
+  .issue-list {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    max-height: none;
+  }
+
+  .issue-card {
+    border-left: 0;
+    border-top: 3px solid transparent;
+  }
+
+  .issue-card.active {
+    border-top-color: var(--green);
+  }
+}
+
+@media (max-width: 680px) {
+  .app-shell {
+    padding: 12px;
+  }
+
+  .masthead {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .top-actions {
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  .top-actions a {
+    flex: 1 1 calc(50% - 6px);
+    justify-content: center;
+  }
+
+  .reader-hero {
+    min-height: auto;
+    padding: 28px 0 18px;
+  }
+
+  .reader-panel {
+    padding: 12px;
+  }
+
+  .reader-topline {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .reader-buttons {
+    width: 100%;
+  }
+
+  .reader-buttons button {
+    flex: 1;
+    width: auto;
+  }
+
+  .page-stage {
+    min-height: auto;
+  }
+
+  .page-frame {
+    padding: 10px 8px 46px;
+  }
+
+  .page-frame img {
+    max-height: none;
+  }
+
+  .page-step {
+    top: auto;
+    bottom: 10px;
+    transform: none;
+  }
+}

@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Planet-Man Comics Reader</title>
+    <meta
+      name="description"
+      content="Read Planet-Man Comics in a static browser reader without downloading the PDFs."
+    >
+    <link rel="preload" as="image" href="../Reference%20Images/40-circuit-world-reference.png">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="masthead">
+        <a class="brand" href="./" aria-label="Planet-Man Comics home">
+          <img src="../Reference%20Images/00-series-logo-wordmark.png" alt="Planet-Man Comics">
+        </a>
+        <nav class="top-actions" aria-label="Reader shortcuts">
+          <a href="#library">Library</a>
+          <a href="#reader">Reader</a>
+          <a href="../Planet-Man%20Volume%20One/planet-man-volume-one.pdf">Volume One</a>
+          <a href="../Planet-Man%20Volume%20Two/planet-man-volume-two.pdf">Volume Two</a>
+        </nav>
+      </header>
+
+      <section class="reader-hero" aria-labelledby="page-title">
+        <div class="hero-copy">
+          <h1 id="page-title">Planet-Man Comics</h1>
+          <p>Browse every issue, open a page, and keep reading without leaving the browser.</p>
+        </div>
+        <div class="reader-controls" aria-label="Library controls">
+          <label class="search-control">
+            <span>Search</span>
+            <input id="searchInput" type="search" placeholder="Issue, title, character">
+          </label>
+          <div class="segmented" role="group" aria-label="Reading mode">
+            <button id="singleModeButton" type="button" class="active" data-mode="single">Page</button>
+            <button id="flowModeButton" type="button" data-mode="flow">Flow</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-grid">
+        <aside class="library-panel" id="library" aria-label="Issue library">
+          <div class="section-heading">
+            <h2>Library</h2>
+            <span id="catalogStatus">Loading</span>
+          </div>
+          <div id="issueList" class="issue-list"></div>
+        </aside>
+
+        <section class="reader-panel" id="reader" aria-live="polite">
+          <div class="reader-topline">
+            <div>
+              <p id="issueKicker" class="issue-kicker"></p>
+              <h2 id="issueTitle">Select an issue</h2>
+            </div>
+            <div class="reader-buttons">
+              <button id="previousIssueButton" type="button" aria-label="Previous issue">
+                <span aria-hidden="true">‹</span>
+              </button>
+              <button id="nextIssueButton" type="button" aria-label="Next issue">
+                <span aria-hidden="true">›</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="page-stage" id="pageStage">
+            <button id="previousPageButton" class="page-step page-step-left" type="button" aria-label="Previous page">
+              <span aria-hidden="true">‹</span>
+            </button>
+            <figure class="page-frame">
+              <img id="pageImage" src="" alt="">
+              <figcaption id="pageCaption"></figcaption>
+            </figure>
+            <button id="nextPageButton" class="page-step page-step-right" type="button" aria-label="Next page">
+              <span aria-hidden="true">›</span>
+            </button>
+          </div>
+
+          <div id="flowReader" class="flow-reader" hidden></div>
+
+          <div class="thumbnail-row" id="thumbnailRow" aria-label="Issue pages"></div>
+        </section>
+      </section>
+    </main>
+
+    <script src="app.js" type="module"></script>
+  </body>
+</html>
