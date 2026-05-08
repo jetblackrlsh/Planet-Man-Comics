@@ -1,0 +1,7 @@
+interface:
+  display_name: "Photo Comic Book PDF"
+  short_description: "Create realistic candid photo-comic PDFs"
+  default_prompt: "Use $photo-comic-book-pdf to turn this story idea and references into a realistic candid photo-comic PDF."
+
+policy:
+  allow_implicit_invocation: true
