@@ -2,7 +2,7 @@
 
 This document is binding project instruction for agents handling Planet-Man image generation tasks. Before generating, regenerating, editing, or replacing any Planet-Man artwork, read and follow this guide alongside the relevant issue script, character bible, and reference-image notes.
 
-All Planet-Man art must be AI generated using the built-in in-chat AI image generation capability. Do not use hand-drawn art, manually composited artwork, stock art, non-AI illustration, or external image-generation workflows as the source of final series art unless the project direction is explicitly changed.
+All Planet-Man art must be AI generated using Codex's built-in in-chat AI image generation capability. In practical terms, use the in-chat image generation tool provided in the current conversation, not an API-key-dependent OpenAI CLI, external image service, stock art source, hand-drawn art, manually composited artwork, or non-AI illustration as the source of final series art unless the project direction is explicitly changed.
 
 Whenever an issue introduces a new named character or named setting, create a dedicated reference image for that character or setting and add it to the `Reference Images/` directory. Also add the corresponding generation prompt to `Reference Images/reference-image-prompts.md` using the next available reference number, so future issues can preserve continuity.
 
