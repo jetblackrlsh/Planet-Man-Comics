@@ -14,8 +14,8 @@ Text rule: caption boxes only, no speech bubbles, no thought bubbles, no floatin
 
 Story role: announce Machine Monarch's escape from the aftermath into a living circuit world.
 Layout: cover image with one strong realistic-photo composition and modest poster clarity, still grounded in candid photo-comic style.
-Readable text inside generated cover art: Title text: "PLANET-MAN: CIRCUIT DIVINITY". Small caption box: "The smallest tyrant found a world that listened."
-Visual beats: Tiny Machine Monarch stands on unconscious Bruiser's chest like a conqueror, glowing green circuits echoing the alien circuit world opening behind him through a white lily pad glyph. Bruiser, Planet-Man, Shrink-Scope, and Hoppette are all unconscious with eyes fully closed. Bruiser is the only character with an eye patch; Planet-Man and Hoppette must not have eyepatches. Leapona hovers enormous above the circuit terrain in the background, webbed hands spread, orange feathered afro lit by green circuitry. The damaged HQ floor and unconscious heroes are faintly visible below the glyph light.
+Readable text inside generated cover art: Title text: "PLANET-MAN: CIRCUIT DIVINITY". Spell the brand name exactly as "PLANET-MAN" with one E in "PLANET"; never spell it "PLANEET-MAN". Small caption box: "The smallest tyrant found a world that listened."
+Visual beats: Tiny Machine Monarch stands on unconscious Bruiser's chest like a conqueror, glowing green circuits echoing the alien circuit world opening behind him through a white lily pad glyph. Bruiser, Planet-Man, Shrink-Scope, and Hoppette are all unconscious with eyes fully closed. Bruiser is the only character with an eye patch; Planet-Man and Hoppette must not have eyepatches. Bruiser's hands must look anatomically normal for a muscular humanoid frog man: proportional to his body, not oversized, not mutated, not swollen, and not distorted by forced perspective. Leapona hovers enormous above the circuit terrain in the background, webbed hands spread, orange feathered afro lit by green circuitry. The damaged HQ floor and unconscious heroes are faintly visible below the glyph light.
 
 ## Page 02 Not Revenge
 

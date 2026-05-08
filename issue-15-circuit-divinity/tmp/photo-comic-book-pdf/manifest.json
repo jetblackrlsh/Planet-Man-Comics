@@ -8,11 +8,11 @@
   "source_pages": [
     {
       "file": "issue-15-circuit-divinity/assets/comic-pages/page-01-cover.png",
-      "width": 1008,
-      "height": 1560,
-      "aspect_ratio": 0.64615,
+      "width": 1023,
+      "height": 1537,
+      "aspect_ratio": 0.66558,
       "target_aspect_ratio": 0.8,
-      "delta": 0.15385
+      "delta": 0.13442
     },
     {
       "file": "issue-15-circuit-divinity/assets/comic-pages/page-02.png",
