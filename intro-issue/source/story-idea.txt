@@ -1,0 +1,21 @@
+Planet-Man introductory issue.
+
+Create a realistic candid photo-comic that introduces Planet-Man, Shrink-Scope,
+their powers, their motivations, their personalities, their mission, and the
+basic structure of future Planet-Man stories.
+
+Core series pattern:
+- Planet-Man is a creator god with Mini-Planetkinesis. He creates and controls
+  miniature planets, using them as art, tools, weapons, drones, and protective
+  constructs.
+- Planet-Man is imaginative, restless, easily distracted, and driven by novelty.
+  He is not cruel, but he forgets creations once a newer idea captures him.
+- Shrink-Scope is a heroic woman from one of his worlds. She has clairvoyance
+  and can change the size of one thing per day.
+- Her world is overrun by superpowered villains. She shrinks Planet-Man down to
+  normal usable scale for her world so he can help stop them.
+- Shrink-Scope locates threats, keeps Planet-Man focused, and stores shrunken
+  villains in a miniature prison.
+- Future stories should feel like serious, strange missions: Shrink-Scope finds
+  a villain, Planet-Man gets fascinated or distracted, the mission tests his
+  responsibility as a creator, and the team saves a piece of the world.
