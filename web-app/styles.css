@@ -126,6 +126,15 @@ a {
   color: var(--green-strong);
 }
 
+.top-actions .support-link {
+  color: #170c02;
+  border-color: rgba(255, 220, 150, 0.72);
+  background: linear-gradient(180deg, #ffd98f, var(--copper));
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.35) inset,
+    0 10px 24px rgba(214, 152, 75, 0.18);
+}
+
 .top-actions a:hover,
 .top-actions a:focus-visible,
 .segmented button:hover,
@@ -137,6 +146,13 @@ a {
   border-color: var(--line-strong);
   outline: none;
   background: rgba(21, 37, 29, 0.94);
+}
+
+.top-actions .support-link:hover,
+.top-actions .support-link:focus-visible {
+  border-color: rgba(255, 230, 176, 0.92);
+  color: #100801;
+  background: linear-gradient(180deg, #ffe6b0, #e8a454);
 }
 
 .reader-hero {
@@ -555,6 +571,10 @@ a {
   .top-actions a {
     flex: 1 1 calc(50% - 6px);
     justify-content: center;
+  }
+
+  .top-actions .support-link {
+    flex-basis: 100%;
   }
 
   .reader-hero {
