@@ -108,6 +108,7 @@ a {
 .top-actions a,
 .segmented button,
 .reader-buttons button,
+.reader-buttons a,
 .page-step {
   min-height: 40px;
   border: 1px solid var(--line);
@@ -141,6 +142,8 @@ a {
 .segmented button:focus-visible,
 .reader-buttons button:hover,
 .reader-buttons button:focus-visible,
+.reader-buttons a:hover,
+.reader-buttons a:focus-visible,
 .page-step:hover,
 .page-step:focus-visible {
   border-color: var(--line-strong);
@@ -373,10 +376,13 @@ a {
 
 .reader-buttons {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
   gap: 8px;
 }
 
 .reader-buttons button,
+.reader-buttons a,
 .page-step {
   display: inline-grid;
   place-items: center;
@@ -393,6 +399,24 @@ a {
   color: var(--green-strong);
   font-size: 0.82rem;
   font-weight: 850;
+}
+
+.reader-buttons .download-button {
+  width: auto;
+  min-width: 128px;
+  padding: 0 16px;
+  color: #041307;
+  border-color: var(--green);
+  background: linear-gradient(180deg, var(--green-strong), var(--green));
+  font-size: 0.82rem;
+  font-weight: 900;
+}
+
+.reader-buttons .download-button:hover,
+.reader-buttons .download-button:focus-visible {
+  color: #031006;
+  border-color: #dfffe7;
+  background: linear-gradient(180deg, #e7ffec, #8dffaa);
 }
 
 .reader-buttons button:disabled,
@@ -595,7 +619,8 @@ a {
     width: 100%;
   }
 
-  .reader-buttons button {
+  .reader-buttons button,
+  .reader-buttons a {
     flex: 1;
     width: auto;
   }

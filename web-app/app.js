@@ -27,6 +27,7 @@ const elements = {
   flowModeButton: document.querySelector("#flowModeButton"),
   firstIssueButton: document.querySelector("#firstIssueButton"),
   latestIssueButton: document.querySelector("#latestIssueButton"),
+  downloadIssueButton: document.querySelector("#downloadIssueButton"),
   previousIssueButton: document.querySelector("#previousIssueButton"),
   nextIssueButton: document.querySelector("#nextIssueButton"),
   previousPageButton: document.querySelector("#previousPageButton"),
@@ -212,6 +213,7 @@ function renderReader() {
 
   renderThumbnails(issue);
   renderFlow(issue);
+  updateDownloadLink(issue);
   updateButtons(issue);
   updateMode();
   updateHash();
@@ -249,6 +251,20 @@ function updateButtons(issue) {
   elements.nextIssueButton.disabled = issueIndex >= state.catalog.length - 1;
   elements.previousPageButton.disabled = state.selectedPage <= 0;
   elements.nextPageButton.disabled = state.selectedPage >= issue.pages.length - 1;
+}
+
+function updateDownloadLink(issue) {
+  if (!issue.pdf) {
+    elements.downloadIssueButton.hidden = true;
+    elements.downloadIssueButton.removeAttribute("href");
+    elements.downloadIssueButton.removeAttribute("download");
+    return;
+  }
+
+  elements.downloadIssueButton.hidden = false;
+  elements.downloadIssueButton.href = issue.pdf;
+  elements.downloadIssueButton.download = filenameFromPath(issue.pdf);
+  elements.downloadIssueButton.setAttribute("aria-label", `Download ${issue.title} as a PDF`);
 }
 
 function updateMode() {
@@ -334,6 +350,11 @@ function titleFromSlug(slug) {
     .split("-")
     .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
     .join(" ");
+}
+
+function filenameFromPath(path) {
+  const normalized = path.split("?")[0].split("#")[0];
+  return normalized.split("/").filter(Boolean).at(-1) || "planet-man-comic.pdf";
 }
 
 function clamp(value, min, max) {
