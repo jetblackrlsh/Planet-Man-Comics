@@ -32,6 +32,9 @@ jobs:
         run: |
           set -euo pipefail
 
+          node web-app/scripts/build-catalog.mjs
+          node web-app/scripts/build-share-pages.mjs
+
           mkdir -p _site
           cp .nojekyll index.html _site/
           cp -R web-app _site/web-app

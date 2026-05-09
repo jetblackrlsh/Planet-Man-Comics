@@ -40,7 +40,7 @@ async function init() {
   wireEvents();
   const seedCatalog = await fetchSeedCatalog();
   state.catalog = await fetchLiveGitHubCatalog(seedCatalog);
-  applyHashState();
+  applyUrlState();
   if (!state.selectedSlug && state.catalog.length) {
     state.selectedSlug = state.catalog[0].slug;
   }
@@ -71,7 +71,7 @@ function wireEvents() {
   });
 
   window.addEventListener("hashchange", () => {
-    applyHashState();
+    applyUrlState();
     render();
   });
 }
@@ -216,7 +216,7 @@ function renderReader() {
   updateDownloadLink(issue);
   updateButtons(issue);
   updateMode();
-  updateHash();
+  updateUrl();
 }
 
 function renderThumbnails(issue) {
@@ -312,7 +312,10 @@ function setStatus(text) {
   elements.status.textContent = text;
 }
 
-function applyHashState() {
+function applyUrlState() {
+  const pathMatch = location.pathname.match(/\/issues\/([^/]+)\/?(?:index\.html)?$/);
+  if (pathMatch) state.selectedSlug = decodeURIComponent(pathMatch[1]);
+
   const params = new URLSearchParams(location.hash.replace(/^#/, ""));
   const slug = params.get("issue");
   const page = Number.parseInt(params.get("page") || "1", 10) - 1;
@@ -320,11 +323,20 @@ function applyHashState() {
   if (Number.isFinite(page)) state.selectedPage = Math.max(0, page);
 }
 
-function updateHash() {
+function updateUrl() {
   const nextHash = `issue=${state.selectedSlug}&page=${state.selectedPage + 1}`;
-  if (location.hash.slice(1) !== nextHash) {
-    history.replaceState(null, "", `#${nextHash}`);
+  const nextPath = `${appPathPrefix()}issues/${encodeURIComponent(state.selectedSlug)}/`;
+  const nextUrl = `${nextPath}#${nextHash}`;
+  if (`${location.pathname}${location.hash}` !== nextUrl) {
+    history.replaceState(null, "", nextUrl);
   }
+}
+
+function appPathPrefix() {
+  const issuePathStart = location.pathname.indexOf("/issues/");
+  if (issuePathStart !== -1) return location.pathname.slice(0, issuePathStart + 1);
+  if (location.pathname.endsWith("/")) return location.pathname;
+  return location.pathname.replace(/[^/]*$/, "");
 }
 
 function labelForPage(file) {
