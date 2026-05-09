@@ -37,6 +37,7 @@ jobs:
           cp -R web-app _site/web-app
 
           mkdir -p "_site/Reference Images"
+          cp "Reference Images/00-series-logo-home-button.png" "_site/Reference Images/"
           cp "Reference Images/00-series-logo-wordmark.png" "_site/Reference Images/"
           cp "Reference Images/40-circuit-world-reference.png" "_site/Reference Images/"
 
