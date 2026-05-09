@@ -94,7 +94,9 @@ a {
   display: block;
   width: 100%;
   height: auto;
-  filter: drop-shadow(0 10px 22px rgba(0, 0, 0, 0.55));
+  filter:
+    drop-shadow(0 0 10px rgba(255, 164, 62, 0.58))
+    drop-shadow(0 8px 20px rgba(0, 0, 0, 0.62));
 }
 
 .top-actions {
