@@ -25,6 +25,8 @@ const elements = {
   searchInput: document.querySelector("#searchInput"),
   singleModeButton: document.querySelector("#singleModeButton"),
   flowModeButton: document.querySelector("#flowModeButton"),
+  firstIssueButton: document.querySelector("#firstIssueButton"),
+  latestIssueButton: document.querySelector("#latestIssueButton"),
   previousIssueButton: document.querySelector("#previousIssueButton"),
   nextIssueButton: document.querySelector("#nextIssueButton"),
   previousPageButton: document.querySelector("#previousPageButton"),
@@ -39,7 +41,7 @@ async function init() {
   state.catalog = await fetchLiveGitHubCatalog(seedCatalog);
   applyHashState();
   if (!state.selectedSlug && state.catalog.length) {
-    state.selectedSlug = state.catalog.at(-1).slug;
+    state.selectedSlug = state.catalog[0].slug;
   }
   render();
 }
@@ -52,6 +54,8 @@ function wireEvents() {
 
   elements.singleModeButton.addEventListener("click", () => setMode("single"));
   elements.flowModeButton.addEventListener("click", () => setMode("flow"));
+  elements.firstIssueButton.addEventListener("click", () => selectBoundaryIssue("first"));
+  elements.latestIssueButton.addEventListener("click", () => selectBoundaryIssue("latest"));
   elements.previousIssueButton.addEventListener("click", () => stepIssue(-1));
   elements.nextIssueButton.addEventListener("click", () => stepIssue(1));
   elements.previousPageButton.addEventListener("click", () => stepPage(-1));
@@ -239,6 +243,8 @@ function renderFlow(issue) {
 
 function updateButtons(issue) {
   const issueIndex = state.catalog.findIndex((item) => item.slug === issue.slug);
+  elements.firstIssueButton.disabled = issueIndex <= 0;
+  elements.latestIssueButton.disabled = issueIndex >= state.catalog.length - 1;
   elements.previousIssueButton.disabled = issueIndex <= 0;
   elements.nextIssueButton.disabled = issueIndex >= state.catalog.length - 1;
   elements.previousPageButton.disabled = state.selectedPage <= 0;
@@ -268,6 +274,11 @@ function stepIssue(direction) {
   const currentIndex = state.catalog.findIndex((issue) => issue.slug === state.selectedSlug);
   const nextIssue = state.catalog[currentIndex + direction];
   if (nextIssue) selectIssue(nextIssue.slug, 0);
+}
+
+function selectBoundaryIssue(position) {
+  const issue = position === "first" ? state.catalog[0] : state.catalog.at(-1);
+  if (issue) selectIssue(issue.slug, 0);
 }
 
 function stepPage(direction) {

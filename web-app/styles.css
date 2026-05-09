@@ -370,6 +370,15 @@ a {
   line-height: 1;
 }
 
+.reader-buttons .issue-jump-button {
+  width: auto;
+  min-width: 112px;
+  padding: 0 14px;
+  color: var(--green-strong);
+  font-size: 0.82rem;
+  font-weight: 850;
+}
+
 .reader-buttons button:disabled,
 .page-step:disabled {
   cursor: not-allowed;
