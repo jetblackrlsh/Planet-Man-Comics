@@ -22,6 +22,8 @@ const summaries = new Map([
   ["issue-13-shock-step", "Shock-Step enters with electricity and speed."],
   ["issue-14-bruiser", "Bruiser brings heavy impact to Planet-Man's HQ."],
   ["issue-15-circuit-divinity", "Machine Monarch escapes into a living circuit world."],
+  ["issue-16-all-machines", "Machine Monarch turns Circuit World into a machine-god domain."],
+  ["issue-17-no-thanks-to-you", "Shrink-Scope and Hoppette recover after Bruiser's attack."],
 ]);
 
 const entries = await readdir(repoRoot, { withFileTypes: true });

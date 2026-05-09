@@ -628,5 +628,89 @@
         "src": "../issue-15-circuit-divinity/assets/comic-pages/page-08.png"
       }
     ]
+  },
+  {
+    "slug": "issue-16-all-machines",
+    "number": 16,
+    "title": "All Machines",
+    "summary": "Machine Monarch turns Circuit World into a machine-god domain.",
+    "cover": "../issue-16-all-machines/assets/comic-pages/page-01-cover.png",
+    "pdf": "../issue-16-all-machines/output/pdf/planet-man-all-machines.pdf",
+    "pages": [
+      {
+        "label": "Cover",
+        "src": "../issue-16-all-machines/assets/comic-pages/page-01-cover.png"
+      },
+      {
+        "label": "Page 2",
+        "src": "../issue-16-all-machines/assets/comic-pages/page-02.png"
+      },
+      {
+        "label": "Page 3",
+        "src": "../issue-16-all-machines/assets/comic-pages/page-03.png"
+      },
+      {
+        "label": "Page 4",
+        "src": "../issue-16-all-machines/assets/comic-pages/page-04.png"
+      },
+      {
+        "label": "Page 5",
+        "src": "../issue-16-all-machines/assets/comic-pages/page-05.png"
+      },
+      {
+        "label": "Page 6",
+        "src": "../issue-16-all-machines/assets/comic-pages/page-06.png"
+      },
+      {
+        "label": "Page 7",
+        "src": "../issue-16-all-machines/assets/comic-pages/page-07.png"
+      },
+      {
+        "label": "Page 8",
+        "src": "../issue-16-all-machines/assets/comic-pages/page-08.png"
+      }
+    ]
+  },
+  {
+    "slug": "issue-17-no-thanks-to-you",
+    "number": 17,
+    "title": "No Thanks To You",
+    "summary": "Shrink-Scope and Hoppette recover after Bruiser's attack.",
+    "cover": "../issue-17-no-thanks-to-you/assets/comic-pages/page-01-cover.png",
+    "pdf": "../issue-17-no-thanks-to-you/output/pdf/planet-man-no-thanks-to-you.pdf",
+    "pages": [
+      {
+        "label": "Cover",
+        "src": "../issue-17-no-thanks-to-you/assets/comic-pages/page-01-cover.png"
+      },
+      {
+        "label": "Page 2",
+        "src": "../issue-17-no-thanks-to-you/assets/comic-pages/page-02.png"
+      },
+      {
+        "label": "Page 3",
+        "src": "../issue-17-no-thanks-to-you/assets/comic-pages/page-03.png"
+      },
+      {
+        "label": "Page 4",
+        "src": "../issue-17-no-thanks-to-you/assets/comic-pages/page-04.png"
+      },
+      {
+        "label": "Page 5",
+        "src": "../issue-17-no-thanks-to-you/assets/comic-pages/page-05.png"
+      },
+      {
+        "label": "Page 6",
+        "src": "../issue-17-no-thanks-to-you/assets/comic-pages/page-06.png"
+      },
+      {
+        "label": "Page 7",
+        "src": "../issue-17-no-thanks-to-you/assets/comic-pages/page-07.png"
+      },
+      {
+        "label": "Page 8",
+        "src": "../issue-17-no-thanks-to-you/assets/comic-pages/page-08.png"
+      }
+    ]
   }
 ]
