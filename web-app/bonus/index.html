@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="../">
+    <title>Planet-Man Comics Bonus</title>
+    <meta
+      name="description"
+      content="Read the Planet-Man series guide and browse the full reference image gallery."
+    >
+    <link rel="canonical" href="https://jetblackrlsh.github.io/Planet-Man-Comics/web-app/bonus/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Planet-Man Comics">
+    <meta property="og:title" content="Planet-Man Comics Bonus">
+    <meta
+      property="og:description"
+      content="Read the Planet-Man series guide and browse the full reference image gallery."
+    >
+    <meta
+      property="og:image"
+      content="https://jetblackrlsh.github.io/Planet-Man-Comics/Reference%20Images/00-series-logo-wordmark.png"
+    >
+    <meta property="og:image:alt" content="Planet-Man Comics">
+    <meta property="og:url" content="https://jetblackrlsh.github.io/Planet-Man-Comics/web-app/bonus/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Planet-Man Comics Bonus">
+    <meta
+      name="twitter:description"
+      content="Read the Planet-Man series guide and browse the full reference image gallery."
+    >
+    <meta
+      name="twitter:image"
+      content="https://jetblackrlsh.github.io/Planet-Man-Comics/Reference%20Images/00-series-logo-wordmark.png"
+    >
+    <link rel="preload" as="image" href="../Reference%20Images/00-series-logo-wordmark.png">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="app-shell bonus-shell">
+      <header class="masthead">
+        <a class="brand" href="./" aria-label="Planet-Man Comics home">
+          <img src="../Reference%20Images/00-series-logo-home-button.png" alt="Planet-Man Comics">
+        </a>
+        <nav class="top-actions" aria-label="Reader shortcuts">
+          <a href="./">Reader</a>
+          <a href="./bonus/" aria-current="page">Bonus</a>
+          <a href="../Planet-Man%20Volume%20One/planet-man-volume-one.pdf">Volume One</a>
+          <a href="../Planet-Man%20Volume%20Two/planet-man-volume-two.pdf">Volume Two</a>
+          <a
+            class="support-link"
+            href="https://donate.stripe.com/aFa6oH5DR6Eq36b649bV600"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Support Planet-Man
+          </a>
+        </nav>
+      </header>
+
+      <section class="bonus-hero" aria-labelledby="bonus-title">
+        <div class="hero-copy">
+          <h1 id="bonus-title">Bonus</h1>
+          <p>Read the series guide and browse the photo reference archive behind Planet-Man Comics.</p>
+        </div>
+        <div class="bonus-cover" aria-hidden="true">
+          <img src="../Reference%20Images/00-series-logo-wordmark.png" alt="">
+        </div>
+      </section>
+
+      <section class="bonus-layout">
+        <aside class="bonus-nav-panel" aria-label="Bonus page sections">
+          <a href="./bonus/#series-guide">Series Guide</a>
+          <a href="./bonus/#reference-gallery">Reference Gallery</a>
+          <label class="search-control gallery-search">
+            <span>Gallery Search</span>
+            <input id="gallerySearch" type="search" placeholder="Character, place, file">
+          </label>
+          <p id="galleryStatus" class="bonus-status">Loading reference images</p>
+        </aside>
+
+        <div class="bonus-content">
+          <section class="guide-panel" id="series-guide" aria-labelledby="series-guide-title">
+            <div class="section-heading">
+              <h2 id="series-guide-title">Series Guide</h2>
+              <a href="../Planet-Man%20Series%20Guide.md">Source Markdown</a>
+            </div>
+            <article id="guideContent" class="guide-content"></article>
+          </section>
+
+          <section class="gallery-panel" id="reference-gallery" aria-labelledby="gallery-title">
+            <div class="section-heading">
+              <h2 id="gallery-title">Reference Gallery</h2>
+              <span id="galleryCount">Loading</span>
+            </div>
+            <div id="referenceGallery" class="reference-gallery"></div>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <dialog id="referenceDialog" class="reference-dialog" aria-labelledby="referenceDialogTitle">
+      <button id="closeReferenceDialog" class="dialog-close" type="button" aria-label="Close reference image">
+        <span aria-hidden="true">×</span>
+      </button>
+      <img id="referenceDialogImage" src="" alt="">
+      <div class="dialog-copy">
+        <p id="referenceDialogNumber" class="issue-kicker"></p>
+        <h2 id="referenceDialogTitle"></h2>
+        <p id="referenceDialogPrompt"></p>
+      </div>
+    </dialog>
+
+    <script src="bonus.js" type="module"></script>
+  </body>
+</html>
