@@ -26,6 +26,18 @@ he once left behind.
 | 3 | Planet-Man: Scalard | Complete | Introduces Scalard, tests Planet-Man's temptation to leave the world, and clarifies that the world's moral direction is still open. |
 | 4 | Planet-Man: Madame Multiverse | Complete | Introduces Madame Multiverse, tests Planet-Man's loyalty to Shrink-Scope against divine loneliness, and shows the cost of protecting his chosen community. |
 | 5 | Planet-Man: Dream Reaper | Complete | Turns the cost of Issue 4 into a dream-horror trial where Planet-Man is accused of stealing Death's title. |
+| 6 | Planet-Man: Nothing Much | Complete | Centers Shrink-Scope as a capable solo hero and proves that scale is not the same as importance. |
+| 7 | Planet-Man: Everything Will Be Okay | Complete | Shows Planet-Man's guilt over Madame Multiverse and Shrink-Scope's choice to protect him with a lie. |
+| 8 | Planet-Man: Machine Monarch | Complete | Reveals Machine Monarch inside the miniature prison and turns containment into a machine takeover threat. |
+| 9 | Planet-Man: Hoppette | Complete | Introduces Hoppette, inter-world hop travel, and the Golem Guardian solution for neglected miniature worlds. |
+| 10 | Planet-Man: Blizzard Redesignation | Complete | Establishes living Golem Guardians as created life and shows Hoppette redeploying them across worlds. |
+| 11 | Planet-Man: Lily Pad Lesson | Complete | Forces Shrink-Scope to confront Hoppette's critique that Planet-Man's chosen world still receives special priority. |
+| 12 | Planet-Man: Hop Incoming | Complete | Introduces Bruiser, the Hoppers' true-god ideology, and Hoppette's life as a fugitive. |
+| 13 | Planet-Man: Shock Step | Complete | Shows Planet-Man burning out while trying to repair every abandoned world through specialized guardians. |
+| 14 | Planet-Man: Bruiser | Complete | Brings Bruiser into Shrink-Scope's HQ and leaves Planet-Man, Shrink-Scope, and Hoppette badly injured. |
+| 15 | Planet-Man: Circuit Divinity | Complete | Moves Machine Monarch to Circuit World and gives him a terrifying new relationship with living machinery. |
+| 16 | Planet-Man: All Machines | Complete | Shows Machine Monarch upgrading Bruiser, subduing Leapona, and declaring Planet-Man as his next target. |
+| 17 | Planet-Man: No Thanks To You | Complete | Reframes the Bruiser attack through Hoppette's past and unites the survivors around future retaliation. |
 
 ## Issue 1: Planet-Man: First Orbit
 
@@ -334,3 +346,438 @@ answers that it was real.
 - Shrink-Scope remains his emotional anchor, but she cannot simply dismiss what
   he experienced.
 - The boundary between dream, guilt, and real cosmic consequence is unresolved.
+
+## Issue 6: Planet-Man: Nothing Much
+
+**Status:** Complete  
+**Location:** `issue-06-shrink-scope-bank-heist/`  
+**PDF:** `issue-06-shrink-scope-bank-heist/output/pdf/planet-man-nothing-much.pdf`
+
+### Summary
+
+While Planet-Man is away on another mission, Shrink-Scope has a clairvoyant
+vision of a bank robbery. She decides not to call Planet-Man because the threat
+appears small enough for her to handle alone, especially since she has already
+used her one daily size alteration.
+
+The robber first looks ordinary, but Shrink-Scope absorbs his full-speed impact
+without moving, catches bullets in her compressed wooden arms, and uses
+future-sight to dodge his super-strength attacks. She launches him through the
+clouds with an uppercut, catches him when he falls unconscious, and hands him to
+the police.
+
+Back at HQ, Planet-Man asks what she has been doing. Shrink-Scope answers with
+casual understatement: "Nothing much."
+
+### Characters Established
+
+- **Bank Robber:** A supposedly ordinary robber whose super strength turns a
+  street-level crime into a real test of Shrink-Scope's solo capability.
+
+### Series Elements Established
+
+- Shrink-Scope is dangerous even when she cannot use her daily size change.
+- Her wooden body, clairvoyance, and discipline make her more than a mission
+  controller for Planet-Man.
+- The series can support smaller, character-focused missions where importance is
+  not measured by cosmic scale.
+
+## Issue 7: Planet-Man: Everything Will Be Okay
+
+**Status:** Complete  
+**Location:** `issue-07-everything-will-be-okay/`  
+**PDF:** `issue-07-everything-will-be-okay/output/pdf/planet-man-everything-will-be-okay.pdf`
+
+### Summary
+
+Shrink-Scope asks Planet-Man if he is happy and whether he resents being kept
+on her world. Planet-Man reassures her that even though he did not choose to
+arrive there at first, he has found purpose, community, and a real home.
+
+Planet-Man then admits that his battle with Madame Multiverse still haunts him.
+He fears that the planets inside her multiverse dress may have been inhabited
+when he destroyed them. Shrink-Scope uses clairvoyance to look back at the
+destroyed worlds and sees the truth: lives were lost.
+
+To save Planet-Man from that guilt, Shrink-Scope lies and tells him the worlds
+were empty. Planet-Man sleeps peacefully for the first time in a long while,
+but Shrink-Scope cries alone in bed, repeating that everything will be okay
+because she needs to believe it.
+
+### Series Elements Established
+
+- Planet-Man's stay in Shrink-Scope's world is now an emotional choice, not only
+  the result of forced recruitment.
+- Shrink-Scope is willing to carry a terrible truth alone to protect
+  Planet-Man's fragile peace.
+- The deaths inside Madame Multiverse's dress are confirmed as real within
+  Shrink-Scope's clairvoyant view.
+
+### Ongoing Threads
+
+- Shrink-Scope's lie creates a private burden that may eventually threaten her
+  trust with Planet-Man.
+- Planet-Man's guilt is temporarily eased, not actually resolved.
+
+## Issue 8: Planet-Man: Machine Monarch
+
+**Status:** Complete  
+**Location:** `issue-08-machine-monarch/`  
+**PDF:** `issue-08-machine-monarch/output/pdf/planet-man-machine-monarch.pdf`
+
+### Summary
+
+Machine Monarch is already shrunken inside Shrink-Scope's miniature prison. His
+cell blocks his machine-control power with a jammer, and its reinforced walls
+prevent brute-force escape. He studies the routines of the prison instead.
+
+When a charging pad flips out of the wall, Machine Monarch uses it as a two-way
+interface. He pushes signals through the charging system, reaches his cell's
+network, shuts down the jammer, and takes control of the robot guards.
+
+Machine Monarch does not escape because he remains tiny, but he turns the
+miniature prison into his first captured kingdom and becomes its unofficial
+warden while plotting revenge.
+
+### Characters Established
+
+- **Machine Monarch:** A black robot tyrant with green circuit patterns, blue
+  LED eyes, a circuit-board crown, and a wire cape. He thinks like
+  infrastructure rather than a brawler.
+- **Miniature Prison Robot Guards:** Security machines that can be subverted by
+  Machine Monarch once his jammer is disabled.
+
+### Series Elements Established
+
+- Shrink-Scope's miniature prison is not only storage; it is a complex system
+  with guards, charging routines, and hidden network vulnerabilities.
+- Machine Monarch can control machines through indirect infrastructure access,
+  making him a long-term threat even while shrunken.
+
+## Issue 9: Planet-Man: Hoppette
+
+**Status:** Complete  
+**Location:** `issue-09-hoppette/`  
+**PDF:** `issue-09-hoppette/output/pdf/planet-man-hoppette.pdf`
+
+### Summary
+
+Planet-Man and Shrink-Scope return to HQ exhausted, only for Hoppette to hop
+out of a glowing white lily pad glyph on the floor. They treat her as an
+intruder. Hoppette is too fast and agile for simple pursuit, but Shrink-Scope
+uses clairvoyance to predict her landing point and Planet-Man traps her in the
+orbit of a miniature gravity planet.
+
+Hoppette explains that she is not an enemy. Her suit lets her travel between
+miniature planets, and she has come to ask why Planet-Man helps only
+Shrink-Scope's world when so many of his creations still need him.
+
+Planet-Man says all worlds matter but he cannot be everywhere at once.
+Shrink-Scope turns the dilemma into a practical idea: Planet-Man can create
+Golem Guardians made from miniature planets to help worlds he cannot personally
+visit. Hoppette leaves through a lily pad glyph carrying the first prototype.
+
+### Characters Established
+
+- **Hoppette:** A humanoid frog woman from another miniature world. She moves by
+  superhuman hopping, sticks to walls with mucus, and travels between worlds
+  through lily pad glyphs.
+- **Miniature-Planet Golem / Golem Guardian:** A created helper body made from
+  many miniature planets, built to extend Planet-Man's protection beyond one
+  world.
+
+### Series Elements Established
+
+- Planet-Man's responsibility now extends explicitly to many neglected
+  miniature worlds, not only Shrink-Scope's world.
+- Hoppette's hop suit creates a new travel network between miniature planets.
+- The Golem Guardian program begins as a compromise between care and scale.
+
+## Issue 10: Planet-Man: Blizzard Redesignation
+
+**Status:** Complete  
+**Location:** `issue-10-blizzard-redesignation/`  
+**PDF:** `issue-10-blizzard-redesignation/output/pdf/planet-man-blizzard-redesignation.pdf`
+
+### Summary
+
+Char Cole, a fire-powered supervillain, brings the defeated ice Golem Guardian
+Blizzard to Doctor Metal Fist's lab. Blizzard is treated like a specimen while
+the villains scan him to understand where the new guardians came from.
+
+Doctor Metal Fist recognizes that the Golem Guardians were created by
+Planet-Man and that their miniature worlds are connected by root systems that
+function like muscles and nerves. He angrily insists that the guardians are
+alive. When Char Cole takes offense at the doctor's insults, the villains begin
+fighting each other.
+
+Hoppette uses the distraction to hop into the lab, rescue Blizzard, and take him
+to a different world. She explains that under her deal with Planet-Man and
+Shrink-Scope, she helps them and they provide Golem Guardians to protect other
+worlds. Blizzard is still weak, but he is redesignated to a world where his ice
+body will not be so easily countered.
+
+### Characters Established
+
+- **Blizzard:** A living Golem Guardian made from miniature ice planets.
+- **Char Cole:** A fire-bodied supervillain whose flames hard-counter Blizzard.
+- **Doctor Metal Fist:** A cruel mad scientist with robotic arms who understands
+  the biological implications of the Golem Guardians.
+
+### Series Elements Established
+
+- Golem Guardians are alive, not disposable tools.
+- Hoppette is actively managing guardian deployment across worlds.
+- The Golem Guardian program creates ethical questions about agency,
+  assignment, and protection.
+
+## Issue 11: Planet-Man: Lily Pad Lesson
+
+**Status:** Complete  
+**Location:** `issue-11-lily-pad-lesson/`  
+**PDF:** `issue-11-lily-pad-lesson/output/pdf/planet-man-lily-pad-lesson.pdf`
+
+### Summary
+
+Hoppette invites Shrink-Scope to spar in a combat training room on another
+miniature planet. Shrink-Scope begins cocky because she has beaten Hoppette
+before, but Hoppette blinds Shrink-Scope's crystal eyes with mucus, blocks her
+future sight, and speed-blitzes her until the adhesive buildup pins her in
+place.
+
+Once Shrink-Scope cannot ignore her, Hoppette explains the real reason for the
+match. She is grateful that Shrink-Scope helped Planet-Man care about his
+creations, but she is frustrated that Shrink-Scope's world still receives the
+real Planet-Man while other worlds receive proxies.
+
+Shrink-Scope argues that the Golem Guardian program exists for exactly that
+problem. Hoppette counters that fixed guardians can be exploited by villains who
+understand their limits. Hoppette frees Shrink-Scope and takes her home,
+leaving Shrink-Scope without an easy answer.
+
+### Series Elements Established
+
+- Hoppette can defeat Shrink-Scope by targeting the physical limits of her
+  clairvoyance.
+- The Golem Guardian program is useful but imperfect because each guardian has a
+  fixed toolset and exploitable weaknesses.
+- Shrink-Scope's attachment to Planet-Man's presence is now part of the moral
+  conflict over his divided responsibility.
+
+## Issue 12: Planet-Man: Hop Incoming
+
+**Status:** Complete  
+**Location:** `issue-12-hop-incoming/`  
+**PDF:** `issue-12-hop-incoming/output/pdf/planet-man-hop-incoming.pdf`
+
+### Summary
+
+Hoppette hides by a campfire on a random miniature planet and meets a talking
+dog who also ran away from home. A red warning announces "Hop Incoming," and
+Hoppette hides before Bruiser arrives through a lily pad glyph.
+
+Bruiser attacks the dog with mucus to flush Hoppette out. When Hoppette
+accidentally reveals herself, Bruiser chases her through the treetops. Their
+argument reveals that Hoppette's people are trying to replace the gods of other
+worlds and that she sees that mission as blasphemy now that Planet-Man has
+returned.
+
+Bruiser reveals a ruby cybernetic laser eye and nearly corners Hoppette. She
+escapes through a lily pad glyph to the one world where he will not follow her:
+Planet-Man's world. Bruiser vows that she cannot hide behind Planet-Man
+forever.
+
+### Characters Established
+
+- **Bruiser:** A muscular frog-man hunter with a black eyepatch, cybernetic
+  laser eye, tongue grapple, and loyalty to the Hoppers' true-god ideology.
+- **The Hoppers:** Hoppette's people, who use hop suits and believe they can
+  fill or replace divine roles on other worlds.
+- **Talking Dog:** An innocent bystander whose danger exposes Hoppette's
+  compassion and restraint.
+
+### Series Elements Established
+
+- Hoppette is a fugitive from her own world.
+- The Hoppers consider Planet-Man "the abandoner" and view themselves as true
+  gods.
+- Bruiser's pursuit connects Hoppette's past directly to Planet-Man's HQ.
+
+## Issue 13: Planet-Man: Shock Step
+
+**Status:** Complete  
+**Location:** `issue-13-shock-step/`  
+**PDF:** `issue-13-shock-step/output/pdf/planet-man-shock-step.pdf`
+
+### Summary
+
+Planet-Man chases Shock Step, a blue-lightning speedster who has robbed a
+jewelry store. Planet-Man is so exhausted that he loses consciousness mid-flight
+and crashes onto a rooftop while Shock Step escapes taunting him.
+
+Two Golem Guardians arrive: one rescues Planet-Man while the other continues
+the chase. When Planet-Man wakes in bed, Shrink-Scope confronts him about
+staying up too late. Planet-Man explains that the backlog of worlds feels
+morally urgent and that he has been obsessively creating specialized guardians
+for each one.
+
+Shrink-Scope helps him identify the pattern: his old compulsive creation rush
+has returned under the cover of responsibility. They agree to spend time
+together each night before bed so he can stop, settle down, and rest.
+
+### Characters Established
+
+- **Shock Step:** A speedster supervillain made from blue lightning, with copper
+  wire hair and battery-disc eyes.
+
+### Series Elements Established
+
+- Planet-Man's attempt to repair every abandoned world risks becoming another
+  self-destructive obsession.
+- Golem Guardians can operate as field responders independent of Planet-Man.
+- Shrink-Scope now functions as a boundary-setter for Planet-Man's health, not
+  only his mission controller.
+
+## Issue 14: Planet-Man: Bruiser
+
+**Status:** Complete  
+**Location:** `issue-14-bruiser/`  
+**PDF:** `issue-14-bruiser/output/pdf/planet-man-bruiser.pdf`
+
+### Summary
+
+Late at night, Hoppette appears in Shrink-Scope's HQ in a panic. Shrink-Scope
+tries to keep Planet-Man out of the crisis because he needs rest, but Bruiser
+has already followed Hoppette through the lily pad route. He ambushes
+Shrink-Scope, slamming her head into the floor with his tongue and knocking her
+unconscious.
+
+Planet-Man attacks in rage despite his exhaustion. Bruiser overpowers him in
+close quarters and knocks Hoppette unconscious with his cybernetic eye. Planet-
+Man blinds Bruiser with a gas planet, bombards him with rocky mini-planets,
+reflects Bruiser's laser with an ice planet, cuts him with ringed worlds, and
+finally knocks him out with a volcanic blast.
+
+Planet-Man wins, but the cost is severe. Bruiser, Shrink-Scope, and Hoppette
+are down, the HQ is damaged, and Planet-Man collapses from exhaustion.
+
+### Series Elements Established
+
+- Hoppette's conflict can reach Shrink-Scope's HQ directly.
+- Bruiser is strong enough to overwhelm Shrink-Scope, Hoppette, and an
+  exhausted Planet-Man in the same fight.
+- Planet-Man can still win while depleted, but only through precise use of
+  specialized mini-planets rather than raw rage.
+
+### Ongoing Threads
+
+- Bruiser's defeat leaves him available for another villain to exploit.
+- Planet-Man's burnout has now become a physical danger to everyone around him.
+
+## Issue 15: Planet-Man: Circuit Divinity
+
+**Status:** Complete  
+**Location:** `issue-15-circuit-divinity/`  
+**PDF:** `issue-15-circuit-divinity/output/pdf/planet-man-circuit-divinity.pdf`
+
+### Summary
+
+In the aftermath of Bruiser's attack, Machine Monarch stands one inch tall on
+Bruiser's unconscious body while Planet-Man, Shrink-Scope, and Hoppette are
+also unconscious nearby. Instead of taking revenge immediately, Machine Monarch
+uses his machine-control power to communicate with Bruiser's hop suit and
+transport them to Circuit World.
+
+Circuit World overwhelms Machine Monarch with billions of machine voices.
+Leapona, a gliding frog-woman Hopper with webbed limbs and wind powers, finds
+him and mocks the idea that he defeated Bruiser. When Machine Monarch names
+Planet-Man, Leapona attacks him as a blasphemer.
+
+Her wind blasts tear open the circuit landscape, causing the world itself to
+scream. Machine Monarch sees exposed wires, speaks to them, and sends a bolt of
+electricity into Leapona. After she falls, he tells the world, "We have much to
+build."
+
+### Characters Established
+
+- **Leapona:** A thin frog-woman Hopper with yellow gliding webbing, orange
+  feathered hair, wind powers, and faith in the Hoppers' divine status.
+- **Circuit World:** A living machine world whose wires, boards, and electronic
+  terrain can be wounded and heard by Machine Monarch.
+
+### Series Elements Established
+
+- Machine Monarch's power scales dramatically on a living machine world.
+- Bruiser's hop suit creates an escape route out of the HQ aftermath.
+- The Hoppers' ideology treats Planet-Man's name as blasphemy.
+
+## Issue 16: Planet-Man: All Machines
+
+**Status:** Complete  
+**Location:** `issue-16-all-machines/`  
+**PDF:** `issue-16-all-machines/output/pdf/planet-man-all-machines.pdf`
+
+### Summary
+
+Leapona wakes on Circuit World after her defeat. Bruiser stands over her, but
+he no longer behaves like an ally. Machine Monarch climbs onto Bruiser's
+shoulder and reveals that Bruiser's shattered red cybernetic eye has been
+replaced with a green machine eye under Machine Monarch's control.
+
+Machine Monarch explains that Bruiser is part machine and therefore listens to
+his god. Leapona tries to fight or escape, but Circuit World's wires restrain
+her, Bruiser's upgraded laser stuns her, and even her lily pad glyph flickers
+out before she can leave.
+
+Machine Monarch walks down Bruiser's extended tongue like a royal bridge and
+commands Leapona. He declares that when he is done upgrading her and Bruiser,
+they will help him eliminate Planet-Man.
+
+### Series Elements Established
+
+- Machine Monarch can control partially mechanical bodies, not only robots or
+  obvious machines.
+- Bruiser has been upgraded into Machine Monarch's weapon.
+- Leapona is captured and marked for the same machine-god conversion.
+- Machine Monarch's next strategic target is explicitly Planet-Man.
+
+## Issue 17: Planet-Man: No Thanks To You
+
+**Status:** Complete  
+**Location:** `issue-17-no-thanks-to-you/`  
+**PDF:** `issue-17-no-thanks-to-you/output/pdf/planet-man-no-thanks-to-you.pdf`
+
+### Summary
+
+After Machine Monarch and Bruiser leave for Circuit World, Shrink-Scope wakes
+first in the damaged HQ and races to Planet-Man. Hoppette wakes injured nearby
+and asks if Planet-Man is alive. Shrink-Scope answers sharply that he is alive
+"no thanks to you."
+
+The argument forces Hoppette to explain her past. Long before she came for
+Planet-Man, she invented the hop suits so her people could fill in as
+replacement gods. After Planet-Man returned, she became a blasphemer in the
+eyes of the Hoppers because she wanted the true creator to help his worlds
+instead of letting her people replace him.
+
+Shrink-Scope realizes that Bruiser attacked because of a larger Hopper godhood
+crisis, not just because Hoppette led him there. Hoppette admits Bruiser is the
+strongest of the Hoppers and she does not know why he spared them. Planet-Man,
+now conscious, places a calming hand on Shrink-Scope's shoulder and says that
+Bruiser's mercy is a mistake they will make sure he regrets.
+
+### Series Elements Established
+
+- Hoppette's original hop-suit project began as an attempt to compensate for
+  missing gods before she knew Planet-Man had returned.
+- The Hoppers' hostility toward Planet-Man is tied to their replacement-god
+  identity, not only Bruiser's personal pursuit.
+- Planet-Man, Shrink-Scope, and Hoppette now share a direct reason to answer
+  Bruiser and Machine Monarch's next move.
+
+### Current Ongoing Threads
+
+- Machine Monarch controls Circuit World, Bruiser, and likely Leapona.
+- The Hoppers' true-god ideology remains unresolved and dangerous.
+- Planet-Man's burnout, Shrink-Scope's protectiveness, and Hoppette's guilt are
+  now bound together by the same coming conflict.

@@ -3,6 +3,12 @@ const state = {
   query: "",
 };
 
+const REPOSITORY = {
+  owner: "jetblackrlsh",
+  name: "Planet-Man-Comics",
+  branch: "main",
+};
+
 const elements = {
   guideContent: document.querySelector("#guideContent"),
   gallery: document.querySelector("#referenceGallery"),
@@ -26,8 +32,9 @@ async function init() {
     const response = await fetch("./bonus-data.json", { cache: "no-store" });
     if (!response.ok) throw new Error(`Bonus data request failed: ${response.status}`);
     const data = await response.json();
-    state.gallery = data.gallery || [];
-    elements.guideContent.innerHTML = markdownToHtml(data.guideMarkdown || "");
+    const guideMarkdown = await fetchLiveGuideMarkdown(data.guideMarkdown || "");
+    state.gallery = await fetchLiveReferenceGallery(data.gallery || []);
+    elements.guideContent.innerHTML = markdownToHtml(guideMarkdown);
     renderGallery();
   } catch (error) {
     elements.guideContent.innerHTML = `<p class="empty-state">Bonus content is unavailable.</p>`;
@@ -36,6 +43,58 @@ async function init() {
     elements.galleryCount.textContent = "Unavailable";
     console.warn(error);
   }
+}
+
+async function fetchLiveGuideMarkdown(seedGuideMarkdown) {
+  if (!location.hostname.endsWith("github.io")) return seedGuideMarkdown;
+
+  try {
+    const url = rawGitHubUrl("Planet-Man Series Guide.md");
+    const response = await fetch(url, { cache: "no-store" });
+    if (!response.ok) throw new Error(`Live guide request failed: ${response.status}`);
+    return response.text();
+  } catch (error) {
+    console.warn(error);
+    return seedGuideMarkdown;
+  }
+}
+
+async function fetchLiveReferenceGallery(seedGallery) {
+  if (!location.hostname.endsWith("github.io")) return seedGallery;
+
+  try {
+    const url = `https://api.github.com/repos/${REPOSITORY.owner}/${REPOSITORY.name}/git/trees/${REPOSITORY.branch}?recursive=1`;
+    const response = await fetch(url, { cache: "no-store" });
+    if (!response.ok) throw new Error(`GitHub tree request failed: ${response.status}`);
+    const payload = await response.json();
+    const liveGallery = liveReferenceImages(payload.tree || [], seedGallery);
+    return liveGallery.length ? liveGallery : seedGallery;
+  } catch (error) {
+    console.warn(error);
+    return seedGallery;
+  }
+}
+
+function liveReferenceImages(tree, seedGallery) {
+  const seedByFile = new Map(seedGallery.map((item) => [item.file, item]));
+
+  return tree
+    .filter((item) => item.type === "blob")
+    .map((item) => item.path.match(/^Reference Images\/([^/]+\.(?:png|jpe?g|webp))$/i))
+    .filter(Boolean)
+    .map((match) => {
+      const [, file] = match;
+      const seed = seedByFile.get(file) || {};
+      return {
+        title: seed.title || titleFromFile(file),
+        number: seed.number || file.match(/^(\d+)/)?.[1] || "",
+        src: rawGitHubUrl(`Reference Images/${file}`),
+        file,
+        promptTitle: seed.promptTitle || "",
+        prompt: seed.prompt || "",
+      };
+    })
+    .sort((a, b) => sortReference(a).localeCompare(sortReference(b), undefined, { numeric: true }));
 }
 
 function wireEvents() {
@@ -93,6 +152,26 @@ function openReference(item) {
   elements.dialog.showModal();
 }
 
+function rawGitHubUrl(repoPath) {
+  const encodedPath = repoPath.split("/").map(encodeURIComponent).join("/");
+  return `https://raw.githubusercontent.com/${REPOSITORY.owner}/${REPOSITORY.name}/${REPOSITORY.branch}/${encodedPath}`;
+}
+
+function sortReference(item) {
+  return `${String(item.number || "").padStart(4, "0")}-${item.file}`;
+}
+
+function titleFromFile(file) {
+  return file
+    .replace(/\.[^.]+$/, "")
+    .replace(/^\d+-/, "")
+    .replace(/-v\d+$/i, "")
+    .split("-")
+    .filter(Boolean)
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(" ");
+}
+
 function markdownToHtml(markdown) {
   const lines = markdown.replace(/\r\n?/g, "\n").split("\n");
   const html = [];
@@ -123,6 +202,11 @@ function markdownToHtml(markdown) {
     if (listItem) {
       flushParagraph();
       list.push(`<li>${inlineMarkdown(listItem[1])}</li>`);
+      continue;
+    }
+
+    if (list.length && /^\s{2,}\S/.test(line)) {
+      list[list.length - 1] = list[list.length - 1].replace("</li>", ` ${inlineMarkdown(line.trim())}</li>`);
       continue;
     }
 

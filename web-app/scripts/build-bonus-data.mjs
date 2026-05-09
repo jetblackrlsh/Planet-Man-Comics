@@ -9,6 +9,10 @@ const referenceRoot = path.resolve(repoRoot, "Reference Images");
 
 const guideMarkdown = await readFile(path.join(repoRoot, "Planet-Man Series Guide.md"), "utf8");
 const promptMarkdown = await readFile(path.join(referenceRoot, "reference-image-prompts.md"), "utf8");
+const issueDirs = await findIssueDirs();
+
+checkSeriesGuideCoverage(guideMarkdown, issueDirs);
+
 const promptEntries = parsePromptEntries(promptMarkdown);
 const imageFiles = (await readdir(referenceRoot)).filter((file) => /\.(?:png|jpe?g|webp)$/i.test(file));
 
@@ -30,6 +34,29 @@ await writeFile(
 );
 
 console.log(`Wrote ${gallery.length} reference images to web-app/bonus-data.json`);
+
+async function findIssueDirs() {
+  const entries = await readdir(repoRoot, { withFileTypes: true });
+  return entries
+    .filter((entry) => entry.isDirectory())
+    .map((entry) => entry.name)
+    .filter((name) => name === "intro-issue" || /^issue-\d{2}-/.test(name))
+    .sort((a, b) => numberFromSlug(a) - numberFromSlug(b));
+}
+
+function checkSeriesGuideCoverage(markdown, issueDirs) {
+  const missing = issueDirs.filter((slug) => {
+    const issueNumber = numberFromSlug(slug);
+    return !new RegExp(`^## Issue ${issueNumber}:`, "m").test(markdown);
+  });
+
+  if (missing.length) {
+    throw new Error(
+      `Planet-Man Series Guide.md is missing issue sections for: ${missing.join(", ")}. ` +
+        "Update the guide before rebuilding bonus-data.json.",
+    );
+  }
+}
 
 function parsePromptEntries(markdown) {
   const sections = [];
@@ -99,4 +126,10 @@ function normalize(value) {
     .replace(/\b(reference|image|character|series|logo)\b/g, "")
     .replace(/\s+/g, " ")
     .trim();
+}
+
+function numberFromSlug(slug) {
+  if (slug === "intro-issue") return 1;
+  const match = slug.match(/^issue-(\d{2})-/);
+  return match ? Number.parseInt(match[1], 10) : 999;
 }

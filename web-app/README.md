@@ -16,7 +16,11 @@ The Bonus page is available at:
 https://jetblackrlsh.github.io/Planet-Man-Comics/web-app/bonus/
 ```
 
-It reads `bonus-data.json`, which contains the series guide markdown and the reference image gallery generated from `Reference Images/`.
+It reads `bonus-data.json` as a static fallback. On `github.io`, it also fetches
+the live `Planet-Man Series Guide.md` from `main` and discovers tracked
+`Reference Images/` assets from the GitHub tree, then loads gallery thumbnails
+from `raw.githubusercontent.com` so new reference images can appear after they
+are committed and pushed.
 
 Share a specific issue with a static preview page:
 
@@ -33,3 +37,7 @@ node web-app/scripts/build-catalog.mjs
 node web-app/scripts/build-bonus-data.mjs
 node web-app/scripts/build-share-pages.mjs
 ```
+
+`build-bonus-data.mjs` checks that `Planet-Man Series Guide.md` has an issue
+section for every `intro-issue` / `issue-*` folder before writing the generated
+Bonus data.
