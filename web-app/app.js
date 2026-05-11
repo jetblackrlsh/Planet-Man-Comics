@@ -12,6 +12,8 @@ const state = {
   query: "",
 };
 
+const SHARE_FEEDBACK_MS = 1600;
+
 const elements = {
   status: document.querySelector("#catalogStatus"),
   issueList: document.querySelector("#issueList"),
@@ -28,6 +30,7 @@ const elements = {
   firstIssueButton: document.querySelector("#firstIssueButton"),
   latestIssueButton: document.querySelector("#latestIssueButton"),
   downloadIssueButton: document.querySelector("#downloadIssueButton"),
+  shareIssueButton: document.querySelector("#shareIssueButton"),
   previousIssueButton: document.querySelector("#previousIssueButton"),
   nextIssueButton: document.querySelector("#nextIssueButton"),
   previousPageButton: document.querySelector("#previousPageButton"),
@@ -57,6 +60,10 @@ function wireEvents() {
   elements.flowModeButton.addEventListener("click", () => setMode("flow"));
   elements.firstIssueButton.addEventListener("click", () => selectBoundaryIssue("first"));
   elements.latestIssueButton.addEventListener("click", () => selectBoundaryIssue("latest"));
+  elements.shareIssueButton.addEventListener("click", () => {
+    const issue = getSelectedIssue();
+    if (issue) copyIssueLink(issue, state.selectedPage, elements.shareIssueButton);
+  });
   elements.previousIssueButton.addEventListener("click", () => stepIssue(-1));
   elements.nextIssueButton.addEventListener("click", () => stepIssue(1));
   elements.previousPageButton.addEventListener("click", () => stepPage(-1));
@@ -179,11 +186,14 @@ function renderIssueList() {
   }
 
   for (const issue of visibleIssues) {
-    const button = document.createElement("button");
-    button.type = "button";
-    button.className = `issue-card${issue.slug === selected?.slug ? " active" : ""}`;
-    button.setAttribute("aria-label", `Open ${issue.title}`);
-    button.innerHTML = `
+    const card = document.createElement("article");
+    card.className = `issue-card${issue.slug === selected?.slug ? " active" : ""}`;
+
+    const openButton = document.createElement("button");
+    openButton.type = "button";
+    openButton.className = "issue-open-button";
+    openButton.setAttribute("aria-label", `Open ${issue.title}`);
+    openButton.innerHTML = `
       <img class="issue-cover" src="${issue.cover}" alt="">
       <span class="issue-meta">
         <span class="issue-number">Issue ${issue.number}</span>
@@ -191,11 +201,21 @@ function renderIssueList() {
         <span class="issue-detail">${issue.pages.length} pages</span>
       </span>
     `;
-    button.addEventListener("click", () => {
+    openButton.addEventListener("click", () => {
       selectIssue(issue.slug, 0);
       document.querySelector("#reader").scrollIntoView({ behavior: "smooth", block: "start" });
     });
-    elements.issueList.append(button);
+
+    const shareButton = document.createElement("button");
+    shareButton.type = "button";
+    shareButton.className = "issue-share-button";
+    shareButton.textContent = "Copy link";
+    shareButton.dataset.defaultLabel = "Copy link";
+    shareButton.setAttribute("aria-label", `Copy link to ${issue.title}`);
+    shareButton.addEventListener("click", () => copyIssueLink(issue, 0, shareButton));
+
+    card.append(openButton, shareButton);
+    elements.issueList.append(card);
   }
 }
 
@@ -214,6 +234,7 @@ function renderReader() {
   renderThumbnails(issue);
   renderFlow(issue);
   updateDownloadLink(issue);
+  updateShareButton(issue);
   updateButtons(issue);
   updateMode();
   updateUrl();
@@ -265,6 +286,63 @@ function updateDownloadLink(issue) {
   elements.downloadIssueButton.href = issue.pdf;
   elements.downloadIssueButton.download = filenameFromPath(issue.pdf);
   elements.downloadIssueButton.setAttribute("aria-label", `Download ${issue.title} as a PDF`);
+}
+
+function updateShareButton(issue) {
+  elements.shareIssueButton.hidden = false;
+  elements.shareIssueButton.dataset.defaultLabel = "Copy Link";
+  elements.shareIssueButton.setAttribute("aria-label", `Copy link to ${issue.title}`);
+}
+
+async function copyIssueLink(issue, pageIndex, button) {
+  const url = issueShareUrl(issue, pageIndex);
+  const copied = await writeClipboardText(url);
+  showCopyFeedback(button, copied ? "Copied" : "Copy failed");
+}
+
+async function writeClipboardText(text) {
+  if (navigator.clipboard?.writeText && window.isSecureContext) {
+    try {
+      await navigator.clipboard.writeText(text);
+      return true;
+    } catch (error) {
+      console.warn(error);
+    }
+  }
+
+  const textarea = document.createElement("textarea");
+  textarea.value = text;
+  textarea.setAttribute("readonly", "");
+  textarea.style.position = "fixed";
+  textarea.style.top = "-1000px";
+  textarea.style.opacity = "0";
+  document.body.append(textarea);
+  textarea.focus();
+  textarea.select();
+  textarea.setSelectionRange(0, text.length);
+
+  try {
+    return document.execCommand("copy");
+  } catch (error) {
+    console.warn(error);
+    return false;
+  } finally {
+    textarea.remove();
+  }
+}
+
+function showCopyFeedback(button, label) {
+  window.clearTimeout(Number(button.dataset.feedbackTimer || 0));
+  const defaultLabel = button.dataset.defaultLabel || button.textContent || "Copy Link";
+  button.textContent = label;
+  button.classList.toggle("copy-failed", label === "Copy failed");
+  button.dataset.feedbackTimer = String(
+    window.setTimeout(() => {
+      button.textContent = defaultLabel;
+      button.classList.remove("copy-failed");
+      delete button.dataset.feedbackTimer;
+    }, SHARE_FEEDBACK_MS),
+  );
 }
 
 function updateMode() {
@@ -337,6 +415,12 @@ function appPathPrefix() {
   if (issuePathStart !== -1) return location.pathname.slice(0, issuePathStart + 1);
   if (location.pathname.endsWith("/")) return location.pathname;
   return location.pathname.replace(/[^/]*$/, "");
+}
+
+function issueShareUrl(issue, pageIndex) {
+  const path = `${appPathPrefix()}issues/${encodeURIComponent(issue.slug)}/`;
+  const hash = `issue=${encodeURIComponent(issue.slug)}&page=${Math.max(0, pageIndex) + 1}`;
+  return new URL(`${path}#${hash}`, location.origin).href;
 }
 
 function labelForPage(file) {

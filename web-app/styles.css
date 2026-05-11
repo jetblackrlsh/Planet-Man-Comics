@@ -301,27 +301,44 @@ a {
 
 .issue-card {
   display: grid;
-  grid-template-columns: 74px 1fr;
-  gap: 12px;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 10px;
   width: 100%;
   min-height: 104px;
   border: 0;
   border-left: 3px solid transparent;
   padding: 12px 14px 12px 11px;
   color: inherit;
-  text-align: left;
   background: rgba(255, 255, 255, 0.02);
 }
 
 .issue-card:hover,
-.issue-card:focus-visible {
-  outline: none;
+.issue-card:focus-within {
   background: rgba(119, 255, 154, 0.08);
 }
 
 .issue-card.active {
   border-left-color: var(--green);
   background: rgba(119, 255, 154, 0.14);
+}
+
+.issue-open-button {
+  display: grid;
+  grid-template-columns: 74px 1fr;
+  gap: 12px;
+  align-items: center;
+  min-width: 0;
+  border: 0;
+  padding: 0;
+  color: inherit;
+  text-align: left;
+  background: transparent;
+}
+
+.issue-open-button:focus-visible {
+  outline: 2px solid var(--green);
+  outline-offset: 4px;
 }
 
 .issue-cover {
@@ -362,6 +379,26 @@ a {
   color: var(--muted);
   font-size: 0.78rem;
   line-height: 1.35;
+}
+
+.issue-share-button {
+  min-height: 34px;
+  min-width: 76px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 0 10px;
+  color: var(--green-strong);
+  background: rgba(9, 16, 12, 0.78);
+  font-size: 0.74rem;
+  font-weight: 850;
+  line-height: 1;
+}
+
+.issue-share-button:hover,
+.issue-share-button:focus-visible {
+  border-color: var(--line-strong);
+  outline: none;
+  background: rgba(21, 37, 29, 0.94);
 }
 
 .reader-panel {
@@ -419,6 +456,21 @@ a {
   background: linear-gradient(180deg, var(--green-strong), var(--green));
   font-size: 0.82rem;
   font-weight: 900;
+}
+
+.reader-buttons .share-button {
+  width: auto;
+  min-width: 104px;
+  padding: 0 14px;
+  color: var(--green-strong);
+  font-size: 0.82rem;
+  font-weight: 850;
+}
+
+.reader-buttons .share-button.copy-failed,
+.issue-share-button.copy-failed {
+  color: #ffe3e0;
+  border-color: rgba(255, 107, 97, 0.72);
 }
 
 .reader-buttons .download-button:hover,
@@ -900,12 +952,17 @@ a {
   }
 
   .issue-card {
+    grid-template-columns: 1fr;
     border-left: 0;
     border-top: 3px solid transparent;
   }
 
   .issue-card.active {
     border-top-color: var(--green);
+  }
+
+  .issue-share-button {
+    width: 100%;
   }
 }
 
