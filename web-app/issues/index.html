@@ -6,20 +6,25 @@
     <base href="../">
     <!-- share-meta:start -->
     <title>Planet-Man Comics</title>
-    <meta name="description" content="Read Planet-Man Comics in a static browser reader.">
+    <meta name="description" content="Browse every Planet-Man comic issue and open the static browser reader for individual stories, covers, pages, and downloadable PDFs.">
+    <meta name="robots" content="index,follow,max-image-preview:large">
+    <meta name="author" content="Planet-Man Comics">
     <link rel="canonical" href="https://jetblackrlsh.github.io/Planet-Man-Comics/web-app/issues/">
+    <link rel="sitemap" type="application/xml" href="https://jetblackrlsh.github.io/Planet-Man-Comics/sitemap.xml">
+    <link rel="image_src" href="https://jetblackrlsh.github.io/Planet-Man-Comics/Reference%20Images/00-series-logo-wordmark.png">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Planet-Man Comics">
     <meta property="og:title" content="Planet-Man Comics">
-    <meta property="og:description" content="Read Planet-Man Comics in a static browser reader.">
+    <meta property="og:description" content="Browse every Planet-Man comic issue and open the static browser reader for individual stories, covers, pages, and downloadable PDFs.">
     <meta property="og:image" content="https://jetblackrlsh.github.io/Planet-Man-Comics/Reference%20Images/00-series-logo-wordmark.png">
     <meta property="og:image:secure_url" content="https://jetblackrlsh.github.io/Planet-Man-Comics/Reference%20Images/00-series-logo-wordmark.png">
     <meta property="og:image:alt" content="Planet-Man Comics cover">
     <meta property="og:url" content="https://jetblackrlsh.github.io/Planet-Man-Comics/web-app/issues/">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Planet-Man Comics">
-    <meta name="twitter:description" content="Read Planet-Man Comics in a static browser reader.">
+    <meta name="twitter:description" content="Browse every Planet-Man comic issue and open the static browser reader for individual stories, covers, pages, and downloadable PDFs.">
     <meta name="twitter:image" content="https://jetblackrlsh.github.io/Planet-Man-Comics/Reference%20Images/00-series-logo-wordmark.png">
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"Planet-Man Comics Issue Archive","description":"A static archive of Planet-Man comic issue pages, cover art, browser-reader links, and PDFs.","url":"https://jetblackrlsh.github.io/Planet-Man-Comics/web-app/issues/","isPartOf":{"@type":"WebSite","name":"Planet-Man Comics","url":"https://jetblackrlsh.github.io/Planet-Man-Comics/web-app/"},"hasPart":[{"@type":"ComicIssue","name":"Planet-Man: First Orbit","issueNumber":1,"url":"https://jetblackrlsh.github.io/Planet-Man-Comics/web-app/issues/intro-issue/"},{"@type":"ComicIssue","name":"Planet-Man: Disastero","issueNumber":2,"url":"https://jetblackrlsh.github.io/Planet-Man-Comics/web-app/issues/issue-02-disastero/"},{"@type":"ComicIssue","name":"Planet-Man: Scalard","issueNumber":3,"url":"https://jetblackrlsh.github.io/Planet-Man-Comics/web-app/issues/issue-03-scalard/"},{"@type":"ComicIssue","name":"Planet-Man: Madame Multiverse","issueNumber":4,"url":"https://jetblackrlsh.github.io/Planet-Man-Comics/web-app/issues/issue-04-madame-multiverse/"},{"@type":"ComicIssue","name":"Planet-Man: Dream Reaper","issueNumber":5,"url":"https://jetblackrlsh.github.io/Planet-Man-Comics/web-app/issues/issue-05-dream-reaper/"},{"@type":"ComicIssue","name":"Planet-Man: Nothing Much","issueNumber":6,"url":"https://jetblackrlsh.github.io/Planet-Man-Comics/web-app/issues/issue-06-shrink-scope-bank-heist/"},{"@type":"ComicIssue","name":"Planet-Man: Everything Will Be Okay","issueNumber":7,"url":"https://jetblackrlsh.github.io/Planet-Man-Comics/web-app/issues/issue-07-everything-will-be-okay/"},{"@type":"ComicIssue","name":"Planet-Man: Machine Monarch","issueNumber":8,"url":"https://jetblackrlsh.github.io/Planet-Man-Comics/web-app/issues/issue-08-machine-monarch/"},{"@type":"ComicIssue","name":"Planet-Man: Hoppette","issueNumber":9,"url":"https://jetblackrlsh.github.io/Planet-Man-Comics/web-app/issues/issue-09-hoppette/"},{"@type":"ComicIssue","name":"Planet-Man: Blizzard Redesignation","issueNumber":10,"url":"https://jetblackrlsh.github.io/Planet-Man-Comics/web-app/issues/issue-10-blizzard-redesignation/"},{"@type":"ComicIssue","name":"Planet-Man: Lily Pad Lesson","issueNumber":11,"url":"https://jetblackrlsh.github.io/Planet-Man-Comics/web-app/issues/issue-11-lily-pad-lesson/"},{"@type":"ComicIssue","name":"Planet-Man: Hop Incoming","issueNumber":12,"url":"https://jetblackrlsh.github.io/Planet-Man-Comics/web-app/issues/issue-12-hop-incoming/"},{"@type":"ComicIssue","name":"Planet-Man: Shock Step","issueNumber":13,"url":"https://jetblackrlsh.github.io/Planet-Man-Comics/web-app/issues/issue-13-shock-step/"},{"@type":"ComicIssue","name":"Planet-Man: Bruiser","issueNumber":14,"url":"https://jetblackrlsh.github.io/Planet-Man-Comics/web-app/issues/issue-14-bruiser/"},{"@type":"ComicIssue","name":"Planet-Man: Circuit Divinity","issueNumber":15,"url":"https://jetblackrlsh.github.io/Planet-Man-Comics/web-app/issues/issue-15-circuit-divinity/"},{"@type":"ComicIssue","name":"Planet-Man: All Machines","issueNumber":16,"url":"https://jetblackrlsh.github.io/Planet-Man-Comics/web-app/issues/issue-16-all-machines/"},{"@type":"ComicIssue","name":"Planet-Man: No Thanks To You","issueNumber":17,"url":"https://jetblackrlsh.github.io/Planet-Man-Comics/web-app/issues/issue-17-no-thanks-to-you/"}]}</script>
     <!-- share-meta:end -->
     <link rel="preload" as="image" href="../Reference%20Images/40-circuit-world-reference.png">
     <link rel="stylesheet" href="styles.css">
@@ -78,6 +83,7 @@
             <div>
               <p id="issueKicker" class="issue-kicker"></p>
               <h2 id="issueTitle">Select an issue</h2>
+              <p id="issueSummary" class="issue-summary"></p>
             </div>
             <div class="reader-buttons">
               <button id="firstIssueButton" class="issue-jump-button" type="button">

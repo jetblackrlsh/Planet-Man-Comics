@@ -5,18 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <base href="./">
     <!-- share-meta:start -->
-    <title>Planet-Man Comics Reader</title>
+    <title>Read Planet-Man Comics Online | Free Static Comic Reader</title>
     <meta
       name="description"
-      content="Read Planet-Man Comics in a static browser reader without downloading the PDFs."
+      content="Read Planet-Man Comics online, browse every issue, open individual comic pages, view cover art, and download Planet-Man PDF issues from the static reader."
     >
+    <meta name="robots" content="index,follow,max-image-preview:large">
+    <meta name="author" content="Planet-Man Comics">
     <link rel="canonical" href="https://jetblackrlsh.github.io/Planet-Man-Comics/web-app/">
+    <link rel="sitemap" type="application/xml" href="https://jetblackrlsh.github.io/Planet-Man-Comics/sitemap.xml">
+    <link
+      rel="image_src"
+      href="https://jetblackrlsh.github.io/Planet-Man-Comics/Reference%20Images/00-series-logo-wordmark.png"
+    >
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Planet-Man Comics">
-    <meta property="og:title" content="Planet-Man Comics Reader">
+    <meta property="og:title" content="Read Planet-Man Comics Online">
     <meta
       property="og:description"
-      content="Read Planet-Man Comics in a static browser reader without downloading the PDFs."
+      content="Browse every Planet-Man issue, read comic pages in the browser, and open downloadable PDFs from the static comic reader."
     >
     <meta
       property="og:image"
@@ -29,15 +36,37 @@
     <meta property="og:image:alt" content="Planet-Man Comics">
     <meta property="og:url" content="https://jetblackrlsh.github.io/Planet-Man-Comics/web-app/">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Planet-Man Comics Reader">
+    <meta name="twitter:title" content="Read Planet-Man Comics Online">
     <meta
       name="twitter:description"
-      content="Read Planet-Man Comics in a static browser reader without downloading the PDFs."
+      content="Browse every Planet-Man issue, read comic pages in the browser, and open downloadable PDFs from the static comic reader."
     >
     <meta
       name="twitter:image"
       content="https://jetblackrlsh.github.io/Planet-Man-Comics/Reference%20Images/00-series-logo-wordmark.png"
     >
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Planet-Man Comics",
+        "url": "https://jetblackrlsh.github.io/Planet-Man-Comics/web-app/",
+        "description": "Read Planet-Man Comics online in a static browser reader with individual issue pages, cover art, and downloadable PDFs.",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Planet-Man Comics",
+          "url": "https://jetblackrlsh.github.io/Planet-Man-Comics/web-app/"
+        },
+        "mainEntity": {
+          "@type": "CreativeWorkSeries",
+          "name": "Planet-Man Comics",
+          "url": "https://jetblackrlsh.github.io/Planet-Man-Comics/web-app/",
+          "genre": ["Superhero comics", "Independent comics"],
+          "inLanguage": "en",
+          "isAccessibleForFree": true
+        }
+      }
+    </script>
     <!-- share-meta:end -->
     <link rel="preload" as="image" href="../Reference%20Images/40-circuit-world-reference.png">
     <link rel="stylesheet" href="styles.css">
@@ -96,6 +125,7 @@
             <div>
               <p id="issueKicker" class="issue-kicker"></p>
               <h2 id="issueTitle">Select an issue</h2>
+              <p id="issueSummary" class="issue-summary"></p>
             </div>
             <div class="reader-buttons">
               <button id="firstIssueButton" class="issue-jump-button" type="button">

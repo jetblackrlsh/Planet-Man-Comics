@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jetblackrlsh.github.io/Planet-Man-Comics/sitemap.xml

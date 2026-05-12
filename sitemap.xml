@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://jetblackrlsh.github.io/Planet-Man-Comics/web-app/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://jetblackrlsh.github.io/Planet-Man-Comics/web-app/issues/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://jetblackrlsh.github.io/Planet-Man-Comics/web-app/bonus/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://jetblackrlsh.github.io/Planet-Man-Comics/web-app/issues/intro-issue/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://jetblackrlsh.github.io/Planet-Man-Comics/intro-issue/assets/comic-pages/page-01-cover.png</image:loc>
+      <image:title>Planet-Man: First Orbit</image:title>
+      <image:caption>Planet-Man is introduced as a creator god who can make miniature worlds but quickly loses interest once a new idea appears. Every bead on his bodysuit is another tiny planet, many of them forgotten after their first spark of novelty.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://jetblackrlsh.github.io/Planet-Man-Comics/web-app/issues/issue-02-disastero/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://jetblackrlsh.github.io/Planet-Man-Comics/issue-02-disastero/assets/comic-pages/page-01-cover.png</image:loc>
+      <image:title>Planet-Man: Disastero</image:title>
+      <image:caption>Disastero is introduced as a walking apocalypse whose elemental body embodies his power: water head, tidal-wave hair, tornado arms, cracked stone torso, and lava legs.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://jetblackrlsh.github.io/Planet-Man-Comics/web-app/issues/issue-03-scalard/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://jetblackrlsh.github.io/Planet-Man-Comics/issue-03-scalard/assets/comic-pages/page-01-cover.png</image:loc>
+      <image:title>Planet-Man: Scalard</image:title>
+      <image:caption>Scalard is introduced as an asymmetrical wizard who sees evil as the true natural order. His split form embodies his philosophy: one face half is red with a black devil horn, the other shimmering white with half of a gold halo, and his...</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://jetblackrlsh.github.io/Planet-Man-Comics/web-app/issues/issue-04-madame-multiverse/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://jetblackrlsh.github.io/Planet-Man-Comics/issue-04-madame-multiverse/assets/comic-pages/page-01-cover.png</image:loc>
+      <image:title>Planet-Man: Madame Multiverse</image:title>
+      <image:caption>Madame Multiverse is introduced as a lonely cosmic god with silver comet-tail hair, nebula-dust skin, radiant blue starburst eyes, and a patchwork dress made from stitched miniature universes.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://jetblackrlsh.github.io/Planet-Man-Comics/web-app/issues/issue-05-dream-reaper/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://jetblackrlsh.github.io/Planet-Man-Comics/issue-05-dream-reaper/assets/comic-pages/page-01-cover.png</image:loc>
+      <image:title>Planet-Man: Dream Reaper</image:title>
+      <image:caption>After the destruction of Madame Multiverse&apos;s dress, Planet-Man falls asleep in his HQ bedroom and dreams himself into a colorful, glowing realm of exotic miniature planets.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://jetblackrlsh.github.io/Planet-Man-Comics/web-app/issues/issue-06-shrink-scope-bank-heist/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://jetblackrlsh.github.io/Planet-Man-Comics/issue-06-shrink-scope-bank-heist/assets/comic-pages/page-01-cover.png</image:loc>
+      <image:title>Planet-Man: Nothing Much</image:title>
+      <image:caption>While Planet-Man is away on another mission, Shrink-Scope has a clairvoyant vision of a bank robbery. She decides not to call Planet-Man because the threat appears small enough for her to handle alone, especially since she has already used...</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://jetblackrlsh.github.io/Planet-Man-Comics/web-app/issues/issue-07-everything-will-be-okay/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://jetblackrlsh.github.io/Planet-Man-Comics/issue-07-everything-will-be-okay/assets/comic-pages/page-01-cover.png</image:loc>
+      <image:title>Planet-Man: Everything Will Be Okay</image:title>
+      <image:caption>Shrink-Scope asks Planet-Man if he is happy and whether he resents being kept on her world. Planet-Man reassures her that even though he did not choose to arrive there at first, he has found purpose, community, and a real home.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://jetblackrlsh.github.io/Planet-Man-Comics/web-app/issues/issue-08-machine-monarch/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://jetblackrlsh.github.io/Planet-Man-Comics/issue-08-machine-monarch/assets/comic-pages/page-01-cover.png</image:loc>
+      <image:title>Planet-Man: Machine Monarch</image:title>
+      <image:caption>Machine Monarch is already shrunken inside Shrink-Scope&apos;s miniature prison. His cell blocks his machine-control power with a jammer, and its reinforced walls prevent brute-force escape. He studies the routines of the prison instead.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://jetblackrlsh.github.io/Planet-Man-Comics/web-app/issues/issue-09-hoppette/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://jetblackrlsh.github.io/Planet-Man-Comics/issue-09-hoppette/assets/comic-pages/page-01-cover.png</image:loc>
+      <image:title>Planet-Man: Hoppette</image:title>
+      <image:caption>Planet-Man and Shrink-Scope return to HQ exhausted, only for Hoppette to hop out of a glowing white lily pad glyph on the floor. They treat her as an intruder.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://jetblackrlsh.github.io/Planet-Man-Comics/web-app/issues/issue-10-blizzard-redesignation/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://jetblackrlsh.github.io/Planet-Man-Comics/issue-10-blizzard-redesignation/assets/comic-pages/page-01-cover.png</image:loc>
+      <image:title>Planet-Man: Blizzard Redesignation</image:title>
+      <image:caption>Char Cole, a fire-powered supervillain, brings the defeated ice Golem Guardian Blizzard to Doctor Metal Fist&apos;s lab. Blizzard is treated like a specimen while the villains scan him to understand where the new guardians came from.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://jetblackrlsh.github.io/Planet-Man-Comics/web-app/issues/issue-11-lily-pad-lesson/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://jetblackrlsh.github.io/Planet-Man-Comics/issue-11-lily-pad-lesson/assets/comic-pages/page-01-cover.png</image:loc>
+      <image:title>Planet-Man: Lily Pad Lesson</image:title>
+      <image:caption>Hoppette invites Shrink-Scope to spar in a combat training room on another miniature planet. Shrink-Scope begins cocky because she has beaten Hoppette before, but Hoppette blinds Shrink-Scope&apos;s crystal eyes with mucus, blocks her future...</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://jetblackrlsh.github.io/Planet-Man-Comics/web-app/issues/issue-12-hop-incoming/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://jetblackrlsh.github.io/Planet-Man-Comics/issue-12-hop-incoming/assets/comic-pages/page-01-cover.png</image:loc>
+      <image:title>Planet-Man: Hop Incoming</image:title>
+      <image:caption>Hoppette hides by a campfire on a random miniature planet and meets a talking dog who also ran away from home. A red warning announces &quot;Hop Incoming,&quot; and Hoppette hides before Bruiser arrives through a lily pad glyph.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://jetblackrlsh.github.io/Planet-Man-Comics/web-app/issues/issue-13-shock-step/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://jetblackrlsh.github.io/Planet-Man-Comics/issue-13-shock-step/assets/comic-pages/page-01-cover.png</image:loc>
+      <image:title>Planet-Man: Shock Step</image:title>
+      <image:caption>Planet-Man chases Shock Step, a blue-lightning speedster who has robbed a jewelry store. Planet-Man is so exhausted that he loses consciousness mid-flight and crashes onto a rooftop while Shock Step escapes taunting him.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://jetblackrlsh.github.io/Planet-Man-Comics/web-app/issues/issue-14-bruiser/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://jetblackrlsh.github.io/Planet-Man-Comics/issue-14-bruiser/assets/comic-pages/page-01-cover.png</image:loc>
+      <image:title>Planet-Man: Bruiser</image:title>
+      <image:caption>Late at night, Hoppette appears in Shrink-Scope&apos;s HQ in a panic. Shrink-Scope tries to keep Planet-Man out of the crisis because he needs rest, but Bruiser has already followed Hoppette through the lily pad route.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://jetblackrlsh.github.io/Planet-Man-Comics/web-app/issues/issue-15-circuit-divinity/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://jetblackrlsh.github.io/Planet-Man-Comics/issue-15-circuit-divinity/assets/comic-pages/page-01-cover.png</image:loc>
+      <image:title>Planet-Man: Circuit Divinity</image:title>
+      <image:caption>In the aftermath of Bruiser&apos;s attack, Machine Monarch stands one inch tall on Bruiser&apos;s unconscious body while Planet-Man, Shrink-Scope, and Hoppette are also unconscious nearby.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://jetblackrlsh.github.io/Planet-Man-Comics/web-app/issues/issue-16-all-machines/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://jetblackrlsh.github.io/Planet-Man-Comics/issue-16-all-machines/assets/comic-pages/page-01-cover.png</image:loc>
+      <image:title>Planet-Man: All Machines</image:title>
+      <image:caption>Leapona wakes on Circuit World after her defeat. Bruiser stands over her, but he no longer behaves like an ally. Machine Monarch climbs onto Bruiser&apos;s shoulder and reveals that Bruiser&apos;s shattered red cybernetic eye has been replaced with a...</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://jetblackrlsh.github.io/Planet-Man-Comics/web-app/issues/issue-17-no-thanks-to-you/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://jetblackrlsh.github.io/Planet-Man-Comics/issue-17-no-thanks-to-you/assets/comic-pages/page-01-cover.png</image:loc>
+      <image:title>Planet-Man: No Thanks To You</image:title>
+      <image:caption>After Machine Monarch and Bruiser leave for Circuit World, Shrink-Scope wakes first in the damaged HQ and races to Planet-Man. Hoppette wakes injured nearby and asks if Planet-Man is alive.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://jetblackrlsh.github.io/Planet-Man-Comics/intro-issue/output/pdf/planet-man-first-orbit.pdf</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://jetblackrlsh.github.io/Planet-Man-Comics/issue-02-disastero/output/pdf/planet-man-disastero.pdf</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://jetblackrlsh.github.io/Planet-Man-Comics/issue-03-scalard/output/pdf/planet-man-scalard.pdf</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://jetblackrlsh.github.io/Planet-Man-Comics/issue-04-madame-multiverse/output/pdf/planet-man-madame-multiverse.pdf</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://jetblackrlsh.github.io/Planet-Man-Comics/issue-05-dream-reaper/output/pdf/planet-man-dream-reaper.pdf</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://jetblackrlsh.github.io/Planet-Man-Comics/issue-06-shrink-scope-bank-heist/output/pdf/planet-man-nothing-much.pdf</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://jetblackrlsh.github.io/Planet-Man-Comics/issue-07-everything-will-be-okay/output/pdf/planet-man-everything-will-be-okay.pdf</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://jetblackrlsh.github.io/Planet-Man-Comics/issue-08-machine-monarch/output/pdf/planet-man-machine-monarch.pdf</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://jetblackrlsh.github.io/Planet-Man-Comics/issue-09-hoppette/output/pdf/planet-man-hoppette.pdf</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://jetblackrlsh.github.io/Planet-Man-Comics/issue-10-blizzard-redesignation/output/pdf/planet-man-blizzard-redesignation.pdf</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://jetblackrlsh.github.io/Planet-Man-Comics/issue-11-lily-pad-lesson/output/pdf/planet-man-lily-pad-lesson.pdf</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://jetblackrlsh.github.io/Planet-Man-Comics/issue-12-hop-incoming/output/pdf/planet-man-hop-incoming.pdf</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://jetblackrlsh.github.io/Planet-Man-Comics/issue-13-shock-step/output/pdf/planet-man-shock-step.pdf</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://jetblackrlsh.github.io/Planet-Man-Comics/issue-14-bruiser/output/pdf/planet-man-bruiser.pdf</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://jetblackrlsh.github.io/Planet-Man-Comics/issue-15-circuit-divinity/output/pdf/planet-man-circuit-divinity.pdf</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://jetblackrlsh.github.io/Planet-Man-Comics/issue-16-all-machines/output/pdf/planet-man-all-machines.pdf</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://jetblackrlsh.github.io/Planet-Man-Comics/issue-17-no-thanks-to-you/output/pdf/planet-man-no-thanks-to-you.pdf</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+</urlset>

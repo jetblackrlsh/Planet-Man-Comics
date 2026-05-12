@@ -19,6 +19,7 @@ const elements = {
   issueList: document.querySelector("#issueList"),
   issueKicker: document.querySelector("#issueKicker"),
   issueTitle: document.querySelector("#issueTitle"),
+  issueSummary: document.querySelector("#issueSummary"),
   pageImage: document.querySelector("#pageImage"),
   pageCaption: document.querySelector("#pageCaption"),
   pageStage: document.querySelector("#pageStage"),
@@ -227,6 +228,7 @@ function renderReader() {
   const page = issue.pages[state.selectedPage];
   elements.issueKicker.textContent = `Issue ${issue.number} of ${state.catalog.length}`;
   elements.issueTitle.textContent = issue.title;
+  elements.issueSummary.textContent = issue.summary || "";
   elements.pageImage.src = page.src;
   elements.pageImage.alt = `${issue.title}, ${page.label}`;
   elements.pageCaption.textContent = `${page.label} / ${issue.pages.length} pages`;

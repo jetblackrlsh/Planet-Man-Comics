@@ -5,6 +5,7 @@ import { fileURLToPath } from "node:url";
 const scriptDir = path.dirname(fileURLToPath(import.meta.url));
 const repoRoot = path.resolve(scriptDir, "../..");
 const appRoot = path.resolve(repoRoot, "web-app");
+const seriesGuidePath = path.join(repoRoot, "Planet-Man Series Guide.md");
 
 const summaries = new Map([
   ["intro-issue", "Planet-Man's introductory issue."],
@@ -26,6 +27,8 @@ const summaries = new Map([
   ["issue-17-no-thanks-to-you", "Shrink-Scope and Hoppette recover after Bruiser's attack."],
 ]);
 
+const guideIssues = parseSeriesGuide(await readFileSafe(seriesGuidePath));
+
 const entries = await readdir(repoRoot, { withFileTypes: true });
 const issueDirs = entries
   .filter((entry) => entry.isDirectory())
@@ -46,13 +49,15 @@ for (const slug of issueDirs) {
   if (!pageFiles.length) continue;
 
   const pdfFiles = (await readDirectorySafe(pdfDir)).filter((name) => name.endsWith(".pdf"));
-  const title = await titleForIssue(slug, pdfFiles[0]);
+  const issueNumber = numberFromSlug(slug);
+  const guideIssue = guideIssues.get(issueNumber);
+  const title = await titleForIssue(slug, pdfFiles[0], guideIssue);
 
   catalog.push({
     slug,
-    number: numberFromSlug(slug),
+    number: issueNumber,
     title,
-    summary: summaries.get(slug) || "Planet-Man issue discovered from the repository.",
+    summary: guideIssue?.summary || summaries.get(slug) || "Planet-Man issue discovered from the repository.",
     cover: `../${slug}/assets/comic-pages/${pageFiles[0]}`,
     pdf: pdfFiles[0] ? `../${slug}/output/pdf/${pdfFiles[0]}` : "",
     pages: pageFiles.map((file) => ({
@@ -65,7 +70,8 @@ for (const slug of issueDirs) {
 await writeFile(path.join(appRoot, "comics.json"), `${JSON.stringify(catalog, null, 2)}\n`);
 console.log(`Wrote ${catalog.length} issues to web-app/comics.json`);
 
-async function titleForIssue(slug, pdfFile) {
+async function titleForIssue(slug, pdfFile, guideIssue) {
+  if (guideIssue?.title) return guideIssue.title;
   if (slug === "intro-issue") return "First Orbit";
   if (pdfFile) return titleCase(pdfFile.replace(/^planet-man-/, "").replace(/\.pdf$/, ""));
 
@@ -87,6 +93,52 @@ async function readDirectorySafe(directory) {
   } catch {
     return [];
   }
+}
+
+async function readFileSafe(file) {
+  try {
+    return await readFile(file, "utf8");
+  } catch {
+    return "";
+  }
+}
+
+function parseSeriesGuide(markdown) {
+  const issues = new Map();
+  const issueHeading = /^## Issue (\d+): Planet-Man: (.+)$/gm;
+  const matches = [...markdown.matchAll(issueHeading)];
+
+  matches.forEach((match, index) => {
+    const start = match.index + match[0].length;
+    const end = matches[index + 1]?.index ?? markdown.length;
+    const section = markdown.slice(start, end);
+    const summary = extractSummary(section);
+
+    if (summary) {
+      issues.set(Number.parseInt(match[1], 10), {
+        title: match[2].trim(),
+        summary,
+      });
+    }
+  });
+
+  return issues;
+}
+
+function extractSummary(section) {
+  const summaryMatch = section.match(/### Summary\s+([\s\S]*?)(?=\n### |\n## |$)/);
+  if (!summaryMatch) return "";
+  return normalizeMarkdownText(summaryMatch[1]);
+}
+
+function normalizeMarkdownText(value) {
+  return value
+    .replace(/`([^`]+)`/g, "$1")
+    .replace(/\*\*([^*]+)\*\*/g, "$1")
+    .replace(/\s*\n\s*/g, " ")
+    .replace(/\b([A-Za-z]+)-\s+([A-Za-z]+)\b/g, "$1-$2")
+    .replace(/\s+/g, " ")
+    .trim();
 }
 
 function labelForPage(file) {

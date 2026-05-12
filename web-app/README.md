@@ -36,8 +36,13 @@ To refresh the checked-in catalog after adding issues:
 node web-app/scripts/build-catalog.mjs
 node web-app/scripts/build-bonus-data.mjs
 node web-app/scripts/build-share-pages.mjs
+node web-app/scripts/build-seo.mjs
 ```
 
 `build-bonus-data.mjs` checks that `Planet-Man Series Guide.md` has an issue
 section for every `intro-issue` / `issue-*` folder before writing the generated
 Bonus data.
+
+`build-seo.mjs` writes the root `sitemap.xml` and `robots.txt` files used by
+search engines. It includes the reader, Bonus page, static issue pages, issue
+cover images, and downloadable issue PDFs.
