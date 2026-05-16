@@ -61,6 +61,7 @@ function shareMetadata({ title, description, imageUrl, shareUrl, type = "article
     <meta name="author" content="Planet-Man Comics">
     <link rel="canonical" href="${escapeHtml(shareUrl)}">
     <link rel="sitemap" type="application/xml" href="${SITE_ROOT}/sitemap.xml">
+    <link rel="alternate" type="application/rss+xml" title="Planet-Man Comics Releases" href="${SITE_ROOT}/rss.xml">
     <link rel="image_src" href="${escapeHtml(imageUrl)}">
     <meta property="og:type" content="${escapeHtml(type)}">
     <meta property="og:site_name" content="Planet-Man Comics">

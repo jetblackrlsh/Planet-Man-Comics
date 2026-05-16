@@ -10,6 +10,7 @@ When creating or completing a new issue:
   - `node web-app/scripts/build-catalog.mjs`
   - `node web-app/scripts/build-bonus-data.mjs`
   - `node web-app/scripts/build-share-pages.mjs`
+  - `node web-app/scripts/build-seo.mjs`
 - Verify the Bonus page after changes. The deployed `github.io` page live-loads
   the latest series guide markdown and discovers tracked `Reference Images/*`
   assets from the GitHub tree.

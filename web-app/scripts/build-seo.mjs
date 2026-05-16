@@ -3,6 +3,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 const SITE_ROOT = "https://jetblackrlsh.github.io/Planet-Man-Comics";
+const FEED_URL = `${SITE_ROOT}/rss.xml`;
 
 const scriptDir = path.dirname(fileURLToPath(import.meta.url));
 const repoRoot = path.resolve(scriptDir, "../..");
@@ -46,6 +47,7 @@ const urls = [
 ];
 
 await writeFile(path.join(repoRoot, "sitemap.xml"), sitemapXml(urls));
+await writeFile(path.join(repoRoot, "rss.xml"), rssXml(catalog));
 await writeFile(
   path.join(repoRoot, "robots.txt"),
   `User-agent: *
@@ -55,7 +57,7 @@ Sitemap: ${SITE_ROOT}/sitemap.xml
 `,
 );
 
-console.log(`Wrote ${urls.length} URLs to sitemap.xml and robots.txt`);
+console.log(`Wrote ${urls.length} URLs to sitemap.xml, rss.xml, and robots.txt`);
 
 function sitemapXml(urls) {
   return `<?xml version="1.0" encoding="UTF-8"?>
@@ -79,6 +81,49 @@ function imageXml(image) {
       <image:title>${escapeXml(image.title)}</image:title>
       <image:caption>${escapeXml(image.caption)}</image:caption>
     </image:image>`;
+}
+
+function rssXml(catalog) {
+  const items = [...catalog]
+    .sort((a, b) => b.number - a.number)
+    .map(feedItemXml)
+    .join("\n");
+
+  return `<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Planet-Man Comics Releases</title>
+    <link>${SITE_ROOT}/web-app/</link>
+    <description>New Planet-Man comic issues published to the static web reader.</description>
+    <language>en-us</language>
+    <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>
+    <atom:link href="${FEED_URL}" rel="self" type="application/rss+xml"/>
+    <image>
+      <url>${SITE_ROOT}/Reference%20Images/00-series-logo-wordmark.png</url>
+      <title>Planet-Man Comics Releases</title>
+      <link>${SITE_ROOT}/web-app/</link>
+    </image>
+${items}
+  </channel>
+</rss>
+`;
+}
+
+function feedItemXml(issue) {
+  const issueUrl = `${SITE_ROOT}/web-app/issues/${encodeURIComponent(issue.slug)}/`;
+  const title = `Planet-Man: ${issue.title} | Issue ${issue.number}`;
+  const description = clampSentence(
+    `Read Planet-Man: ${issue.title}, issue ${issue.number} of the Planet-Man Comics series. ${issue.summary}`,
+    500,
+  );
+
+  return `    <item>
+      <title>${escapeXml(title)}</title>
+      <link>${escapeXml(issueUrl)}</link>
+      <guid isPermaLink="true">${escapeXml(issueUrl)}</guid>
+      <description>${escapeXml(description)}</description>
+      <category>Planet-Man Comics</category>
+    </item>`;
 }
 
 function absoluteSiteUrl(catalogPath) {

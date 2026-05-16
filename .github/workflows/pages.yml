@@ -38,7 +38,7 @@ jobs:
           node web-app/scripts/build-seo.mjs
 
           mkdir -p _site
-          cp .nojekyll index.html robots.txt sitemap.xml _site/
+          cp .nojekyll index.html robots.txt sitemap.xml rss.xml _site/
           cp -R web-app _site/web-app
 
           mkdir -p "_site/Reference Images"
