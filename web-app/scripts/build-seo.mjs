@@ -27,6 +27,11 @@ const urls = [
     changefreq: "weekly",
     priority: "0.7",
   },
+  {
+    loc: `${SITE_ROOT}/web-app/follow/`,
+    changefreq: "monthly",
+    priority: "0.8",
+  },
   ...catalog.map((issue) => ({
     loc: `${SITE_ROOT}/web-app/issues/${encodeURIComponent(issue.slug)}/`,
     changefreq: "monthly",

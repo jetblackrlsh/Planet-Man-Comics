@@ -16,11 +16,19 @@ The Bonus page is available at:
 https://jetblackrlsh.github.io/Planet-Man-Comics/web-app/bonus/
 ```
 
-It reads `bonus-data.json` as a static fallback. On `github.io`, it also fetches
-the live `Planet-Man Series Guide.md` from `main` and discovers tracked
-`Reference Images/` assets from the GitHub tree, then loads gallery thumbnails
-from `raw.githubusercontent.com` so new reference images can appear after they
-are committed and pushed.
+The Follow page is available at:
+
+```text
+https://jetblackrlsh.github.io/Planet-Man-Comics/web-app/follow/
+```
+
+It embeds the follow.it email subscription form for new comic release updates.
+
+The Bonus page reads `bonus-data.json` as a static fallback. On `github.io`, it
+also fetches the live `Planet-Man Series Guide.md` from `main` and discovers
+tracked `Reference Images/` assets from the GitHub tree, then loads gallery
+thumbnails from `raw.githubusercontent.com` so new reference images can appear
+after they are committed and pushed.
 
 Share a specific issue with a static preview page:
 
