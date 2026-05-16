@@ -138,6 +138,12 @@ a {
     0 10px 24px rgba(214, 152, 75, 0.18);
 }
 
+.top-actions .review-link {
+  color: #041307;
+  border-color: var(--green);
+  background: linear-gradient(180deg, var(--green-strong), var(--green));
+}
+
 .top-actions a:hover,
 .top-actions a:focus-visible,
 .top-actions a[aria-current="page"],
@@ -165,6 +171,13 @@ a {
   border-color: rgba(255, 230, 176, 0.92);
   color: #100801;
   background: linear-gradient(180deg, #ffe6b0, #e8a454);
+}
+
+.top-actions .review-link:hover,
+.top-actions .review-link:focus-visible {
+  color: #031006;
+  border-color: #dfffe7;
+  background: linear-gradient(180deg, #e7ffec, #8dffaa);
 }
 
 .reader-hero {
@@ -470,6 +483,17 @@ a {
   font-weight: 900;
 }
 
+.reader-buttons .review-button {
+  width: auto;
+  min-width: 92px;
+  padding: 0 14px;
+  color: #041307;
+  border-color: var(--green);
+  background: linear-gradient(180deg, var(--green-strong), var(--green));
+  font-size: 0.82rem;
+  font-weight: 900;
+}
+
 .reader-buttons .share-button {
   width: auto;
   min-width: 104px;
@@ -486,7 +510,9 @@ a {
 }
 
 .reader-buttons .download-button:hover,
-.reader-buttons .download-button:focus-visible {
+.reader-buttons .download-button:focus-visible,
+.reader-buttons .review-button:hover,
+.reader-buttons .review-button:focus-visible {
   color: #031006;
   border-color: #dfffe7;
   background: linear-gradient(180deg, #e7ffec, #8dffaa);
