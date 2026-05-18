@@ -9,6 +9,7 @@ const state = {
   selectedSlug: "",
   selectedPage: 0,
   mode: "flow",
+  readerMode: false,
   query: "",
 };
 
@@ -22,6 +23,7 @@ const elements = {
   issueSummary: document.querySelector("#issueSummary"),
   pageImage: document.querySelector("#pageImage"),
   pageCaption: document.querySelector("#pageCaption"),
+  readerPanel: document.querySelector("#reader"),
   pageStage: document.querySelector("#pageStage"),
   flowReader: document.querySelector("#flowReader"),
   thumbnailRow: document.querySelector("#thumbnailRow"),
@@ -32,6 +34,7 @@ const elements = {
   latestIssueButton: document.querySelector("#latestIssueButton"),
   downloadIssueButton: document.querySelector("#downloadIssueButton"),
   shareIssueButton: document.querySelector("#shareIssueButton"),
+  readerModeButton: document.querySelector("#readerModeButton"),
   previousIssueButton: document.querySelector("#previousIssueButton"),
   nextIssueButton: document.querySelector("#nextIssueButton"),
   previousPageButton: document.querySelector("#previousPageButton"),
@@ -65,6 +68,7 @@ function wireEvents() {
     const issue = getSelectedIssue();
     if (issue) copyIssueLink(issue, state.selectedPage, elements.shareIssueButton);
   });
+  elements.readerModeButton.addEventListener("click", toggleReaderMode);
   elements.previousIssueButton.addEventListener("click", () => stepIssue(-1));
   elements.nextIssueButton.addEventListener("click", () => stepIssue(1));
   elements.previousPageButton.addEventListener("click", () => stepPage(-1));
@@ -72,6 +76,10 @@ function wireEvents() {
 
   document.addEventListener("keydown", (event) => {
     if (event.target.matches("input, textarea")) return;
+    if (event.key === "Escape" && state.readerMode) {
+      exitReaderMode();
+      return;
+    }
     if (event.key === "ArrowLeft") stepPage(-1);
     if (event.key === "ArrowRight") stepPage(1);
     if (event.key === "ArrowUp") stepIssue(-1);
@@ -81,6 +89,11 @@ function wireEvents() {
   window.addEventListener("hashchange", () => {
     applyUrlState();
     render();
+  });
+
+  document.addEventListener("fullscreenchange", () => {
+    state.readerMode = document.fullscreenElement === elements.readerPanel;
+    updateReaderMode();
   });
 }
 
@@ -239,6 +252,7 @@ function renderReader() {
   updateShareButton(issue);
   updateButtons(issue);
   updateMode();
+  updateReaderMode();
   updateUrl();
 }
 
@@ -358,6 +372,48 @@ function updateMode() {
 function setMode(mode) {
   state.mode = mode;
   updateMode();
+}
+
+async function toggleReaderMode() {
+  if (state.readerMode) {
+    await exitReaderMode();
+    return;
+  }
+
+  state.readerMode = true;
+  updateReaderMode();
+
+  if (elements.readerPanel.requestFullscreen) {
+    try {
+      await elements.readerPanel.requestFullscreen();
+    } catch (error) {
+      console.warn(error);
+    }
+  }
+
+  elements.readerPanel.scrollIntoView({ block: "start" });
+}
+
+async function exitReaderMode() {
+  state.readerMode = false;
+  updateReaderMode();
+
+  if (document.fullscreenElement === elements.readerPanel && document.exitFullscreen) {
+    try {
+      await document.exitFullscreen();
+    } catch (error) {
+      console.warn(error);
+    }
+  }
+}
+
+function updateReaderMode() {
+  const isReaderMode = state.readerMode || document.fullscreenElement === elements.readerPanel;
+  state.readerMode = isReaderMode;
+  document.body.classList.toggle("reader-mode-active", isReaderMode);
+  elements.readerPanel.classList.toggle("reader-fullscreen", isReaderMode);
+  elements.readerModeButton.textContent = isReaderMode ? "Exit Reader" : "Reader Mode";
+  elements.readerModeButton.setAttribute("aria-pressed", String(isReaderMode));
 }
 
 function selectIssue(slug, pageIndex = 0) {
