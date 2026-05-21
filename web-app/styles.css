@@ -1114,6 +1114,78 @@ body.reader-mode-active {
   padding-bottom: 56px;
 }
 
+.other-sites-shell {
+  padding-bottom: 56px;
+}
+
+.other-sites-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(320px, 560px);
+  align-items: center;
+  gap: 32px;
+  min-height: clamp(500px, 68vh, 740px);
+  padding: 54px 0 36px;
+}
+
+.other-sites-grid {
+  display: grid;
+  gap: 14px;
+  min-width: 0;
+}
+
+.comic-site-card {
+  display: grid;
+  gap: 10px;
+  min-width: 0;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius);
+  padding: clamp(18px, 3vw, 28px);
+  background:
+    linear-gradient(135deg, rgba(119, 255, 154, 0.13), transparent 48%),
+    rgba(6, 11, 8, 0.78);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(20px);
+}
+
+.comic-site-card:hover,
+.comic-site-card:focus-visible {
+  border-color: var(--green);
+  outline: none;
+  background:
+    linear-gradient(135deg, rgba(119, 255, 154, 0.2), transparent 50%),
+    rgba(13, 24, 18, 0.92);
+}
+
+.dream-comics-card {
+  background:
+    linear-gradient(135deg, rgba(126, 220, 255, 0.15), transparent 48%),
+    rgba(6, 11, 8, 0.78);
+}
+
+.dream-comics-card:hover,
+.dream-comics-card:focus-visible {
+  border-color: var(--signal-blue);
+  background:
+    linear-gradient(135deg, rgba(126, 220, 255, 0.24), transparent 50%),
+    rgba(10, 21, 25, 0.9);
+}
+
+.comic-site-title {
+  color: var(--text);
+  font-size: clamp(1.6rem, 4vw, 2.55rem);
+  font-weight: 900;
+  line-height: 1.02;
+  letter-spacing: 0;
+}
+
+.comic-site-url {
+  color: var(--muted);
+  font-size: 0.92rem;
+  font-weight: 800;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+}
+
 .follow-hero {
   display: grid;
   grid-template-columns: minmax(0, 0.9fr) minmax(320px, 540px);
@@ -1302,6 +1374,7 @@ body.reader-mode-active {
   .content-grid,
   .bonus-hero,
   .follow-hero,
+  .other-sites-hero,
   .bonus-layout,
   .reference-dialog[open] {
     grid-template-columns: 1fr;
@@ -1387,7 +1460,13 @@ body.reader-mode-active {
     padding: 28px 0 18px;
   }
 
-  .follow-hero .hero-copy h1 {
+  .other-sites-hero {
+    min-height: auto;
+    padding: 28px 0 18px;
+  }
+
+  .follow-hero .hero-copy h1,
+  .other-sites-hero .hero-copy h1 {
     font-size: clamp(2.35rem, 10vw, 2.7rem);
     line-height: 0.98;
     overflow-wrap: anywhere;
