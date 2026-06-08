@@ -215,10 +215,7 @@ function renderIssueList() {
         <span class="issue-detail">${issue.pages.length} pages</span>
       </span>
     `;
-    openButton.addEventListener("click", () => {
-      selectIssue(issue.slug, 0);
-      document.querySelector("#reader").scrollIntoView({ behavior: "smooth", block: "start" });
-    });
+    openButton.addEventListener("click", () => selectIssue(issue.slug, 0, { scrollToReader: true }));
 
     const shareButton = document.createElement("button");
     shareButton.type = "button";
@@ -416,10 +413,12 @@ function updateReaderMode() {
   elements.readerModeButton.setAttribute("aria-pressed", String(isReaderMode));
 }
 
-function selectIssue(slug, pageIndex = 0) {
+function selectIssue(slug, pageIndex = 0, options = {}) {
+  const issueChanged = slug !== state.selectedSlug;
   state.selectedSlug = slug;
   state.selectedPage = pageIndex;
   render();
+  if (options.scrollToReader || issueChanged) scrollReaderIntoView();
 }
 
 function stepIssue(direction) {
@@ -446,6 +445,21 @@ function getSelectedIssue() {
 
 function setStatus(text) {
   elements.status.textContent = text;
+}
+
+function scrollReaderIntoView() {
+  if (!elements.readerPanel) return;
+
+  window.requestAnimationFrame(() => {
+    elements.readerPanel.scrollIntoView({
+      behavior: preferredScrollBehavior(),
+      block: "start",
+    });
+  });
+}
+
+function preferredScrollBehavior() {
+  return window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth";
 }
 
 function applyUrlState() {
