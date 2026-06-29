@@ -1,0 +1,52 @@
+# Planet-Man Comics
+
+> Planet-Man Comics is a static comic-reader site for an original superhero fantasy series about Planet-Man, a restless creator god with miniature-planet powers, and Shrink-Scope, the clairvoyant hero who recruits him to protect one of his forgotten worlds.
+
+The canonical public reader is hosted at https://jetblackrlsh.github.io/Planet-Man-Comics/web-app/. The repository also includes PDF issues, source scripts, reference images, a series guide, and generated static pages for sharing, search indexing, and bonus material.
+
+## Core Pages
+
+- [Reader home](https://jetblackrlsh.github.io/Planet-Man-Comics/web-app/): Browser reader for the complete Planet-Man issue catalog.
+- [Issue archive](https://jetblackrlsh.github.io/Planet-Man-Comics/web-app/issues/): Static index of individual issue share pages.
+- [Bonus page](https://jetblackrlsh.github.io/Planet-Man-Comics/web-app/bonus/): Series guide material and reference-image gallery.
+- [Follow page](https://jetblackrlsh.github.io/Planet-Man-Comics/web-app/follow/): Email subscription page for release updates.
+- [Other comics](https://jetblackrlsh.github.io/Planet-Man-Comics/web-app/other-comics/): Links to related comic projects.
+
+## Machine-Readable Resources
+
+- [Sitemap](https://jetblackrlsh.github.io/Planet-Man-Comics/sitemap.xml): Search index of the public web app and issue pages.
+- [RSS feed](https://jetblackrlsh.github.io/Planet-Man-Comics/rss.xml): Newest-first feed of published issues.
+- [Robots file](https://jetblackrlsh.github.io/Planet-Man-Comics/robots.txt): Crawler policy for the site.
+- [Issue catalog JSON](https://jetblackrlsh.github.io/Planet-Man-Comics/web-app/comics.json): Static fallback catalog used by the reader.
+- [Bonus data JSON](https://jetblackrlsh.github.io/Planet-Man-Comics/web-app/bonus-data.json): Static fallback data for bonus material and reference prompts.
+
+## Source Documents
+
+- [Planet-Man Series Guide](https://github.com/JetBlackRLSH/Planet-Man-Comics/blob/main/Planet-Man%20Series%20Guide.md): Continuity guide, issue index, summaries, relevant characters, series elements, and ongoing threads.
+- [Planet-Man Series Idea](https://github.com/JetBlackRLSH/Planet-Man-Comics/blob/main/Planet-Man%20Series%20Idea.md): Series concept material.
+- [Art Style Guide](https://github.com/JetBlackRLSH/Planet-Man-Comics/blob/main/Art%20Style%20Guide.md): Visual style direction.
+- [Reference image prompts](https://github.com/JetBlackRLSH/Planet-Man-Comics/blob/main/Reference%20Images/reference-image-prompts.md): Prompt metadata for tracked reference images.
+
+## Issues
+
+- [Issue 1: Planet-Man: First Orbit](https://jetblackrlsh.github.io/Planet-Man-Comics/web-app/issues/intro-issue/)
+- [Issue 2: Planet-Man: Disastero](https://jetblackrlsh.github.io/Planet-Man-Comics/web-app/issues/issue-02-disastero/)
+- [Issue 3: Planet-Man: Scalard](https://jetblackrlsh.github.io/Planet-Man-Comics/web-app/issues/issue-03-scalard/)
+- [Issue 4: Planet-Man: Madame Multiverse](https://jetblackrlsh.github.io/Planet-Man-Comics/web-app/issues/issue-04-madame-multiverse/)
+- [Issue 5: Planet-Man: Dream Reaper](https://jetblackrlsh.github.io/Planet-Man-Comics/web-app/issues/issue-05-dream-reaper/)
+- [Issue 6: Planet-Man: Nothing Much](https://jetblackrlsh.github.io/Planet-Man-Comics/web-app/issues/issue-06-shrink-scope-bank-heist/)
+- [Issue 7: Planet-Man: Everything Will Be Okay](https://jetblackrlsh.github.io/Planet-Man-Comics/web-app/issues/issue-07-everything-will-be-okay/)
+- [Issue 8: Planet-Man: Machine Monarch](https://jetblackrlsh.github.io/Planet-Man-Comics/web-app/issues/issue-08-machine-monarch/)
+- [Issue 9: Planet-Man: Hoppette](https://jetblackrlsh.github.io/Planet-Man-Comics/web-app/issues/issue-09-hoppette/)
+- [Issue 10: Planet-Man: Blizzard Redesignation](https://jetblackrlsh.github.io/Planet-Man-Comics/web-app/issues/issue-10-blizzard-redesignation/)
+- [Issue 11: Planet-Man: Lily Pad Lesson](https://jetblackrlsh.github.io/Planet-Man-Comics/web-app/issues/issue-11-lily-pad-lesson/)
+- [Issue 12: Planet-Man: Hop Incoming](https://jetblackrlsh.github.io/Planet-Man-Comics/web-app/issues/issue-12-hop-incoming/)
+- [Issue 13: Planet-Man: Shock Step](https://jetblackrlsh.github.io/Planet-Man-Comics/web-app/issues/issue-13-shock-step/)
+- [Issue 14: Planet-Man: Bruiser](https://jetblackrlsh.github.io/Planet-Man-Comics/web-app/issues/issue-14-bruiser/)
+- [Issue 15: Planet-Man: Circuit Divinity](https://jetblackrlsh.github.io/Planet-Man-Comics/web-app/issues/issue-15-circuit-divinity/)
+- [Issue 16: Planet-Man: All Machines](https://jetblackrlsh.github.io/Planet-Man-Comics/web-app/issues/issue-16-all-machines/)
+- [Issue 17: Planet-Man: No Thanks To You](https://jetblackrlsh.github.io/Planet-Man-Comics/web-app/issues/issue-17-no-thanks-to-you/)
+
+## Notes For Automated Readers
+
+The web app's checked-in `web-app/comics.json` file is the stable static catalog. On GitHub Pages, the reader and bonus page can also fetch live repository data from GitHub to discover newly tracked issue folders and `Reference Images/` assets after they are pushed.
