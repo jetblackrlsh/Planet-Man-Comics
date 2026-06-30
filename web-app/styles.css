@@ -1114,8 +1114,84 @@ body.reader-mode-active {
   padding-bottom: 56px;
 }
 
+.ai-limitations-shell {
+  padding-bottom: 56px;
+}
+
 .other-sites-shell {
   padding-bottom: 56px;
+}
+
+.ai-limitations-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 0.92fr) minmax(320px, 560px);
+  align-items: center;
+  gap: 32px;
+  min-height: clamp(520px, 70vh, 760px);
+  padding: 54px 0 36px;
+}
+
+.ai-note-card {
+  display: grid;
+  gap: 14px;
+  min-width: 0;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius);
+  padding: clamp(20px, 4vw, 34px);
+  background:
+    linear-gradient(135deg, rgba(126, 220, 255, 0.14), transparent 52%),
+    linear-gradient(180deg, rgba(237, 248, 239, 0.08), rgba(119, 255, 154, 0.04)),
+    rgba(6, 11, 8, 0.82);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(22px);
+}
+
+.ai-note-card h2 {
+  margin: 0;
+  color: var(--text);
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  line-height: 1.02;
+  letter-spacing: 0;
+  overflow-wrap: anywhere;
+}
+
+.ai-note-card p {
+  margin: 0;
+  color: #c6d7cc;
+  font-size: 1rem;
+  line-height: 1.62;
+}
+
+.ai-limitations-content {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  padding-bottom: 24px;
+}
+
+.ai-limitations-panel {
+  min-width: 0;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: clamp(18px, 3vw, 26px);
+  background: rgba(8, 14, 11, 0.82);
+  box-shadow: 0 18px 48px rgba(0, 0, 0, 0.34);
+  backdrop-filter: blur(18px);
+}
+
+.ai-limitations-panel h2 {
+  margin: 0 0 12px;
+  color: var(--green-strong);
+  font-size: clamp(1.25rem, 2.3vw, 1.8rem);
+  line-height: 1.12;
+  letter-spacing: 0;
+}
+
+.ai-limitations-panel p {
+  margin: 0;
+  color: #c6d7cc;
+  font-size: 0.98rem;
+  line-height: 1.65;
 }
 
 .other-sites-hero {
@@ -1373,6 +1449,8 @@ body.reader-mode-active {
   .reader-hero,
   .content-grid,
   .bonus-hero,
+  .ai-limitations-hero,
+  .ai-limitations-content,
   .follow-hero,
   .other-sites-hero,
   .bonus-layout,
@@ -1460,11 +1538,17 @@ body.reader-mode-active {
     padding: 28px 0 18px;
   }
 
+  .ai-limitations-hero {
+    min-height: auto;
+    padding: 28px 0 18px;
+  }
+
   .other-sites-hero {
     min-height: auto;
     padding: 28px 0 18px;
   }
 
+  .ai-limitations-hero .hero-copy h1,
   .follow-hero .hero-copy h1,
   .other-sites-hero .hero-copy h1 {
     font-size: clamp(2.35rem, 10vw, 2.7rem);

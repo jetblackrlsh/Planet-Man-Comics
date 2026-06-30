@@ -9,6 +9,7 @@ The canonical public reader is hosted at https://jetblackrlsh.github.io/Planet-M
 - [Reader home](https://jetblackrlsh.github.io/Planet-Man-Comics/web-app/): Browser reader for the complete Planet-Man issue catalog.
 - [Issue archive](https://jetblackrlsh.github.io/Planet-Man-Comics/web-app/issues/): Static index of individual issue share pages.
 - [Bonus page](https://jetblackrlsh.github.io/Planet-Man-Comics/web-app/bonus/): Series guide material and reference-image gallery.
+- [AI Limitations](https://jetblackrlsh.github.io/Planet-Man-Comics/web-app/ai-limitations/): Transparency note explaining that AI is part of the creative process and that visible mistakes are retained.
 - [Follow page](https://jetblackrlsh.github.io/Planet-Man-Comics/web-app/follow/): Email subscription page for release updates.
 - [Other comics](https://jetblackrlsh.github.io/Planet-Man-Comics/web-app/other-comics/): Links to related comic projects.
 

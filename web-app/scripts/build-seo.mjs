@@ -28,6 +28,11 @@ const urls = [
     priority: "0.7",
   },
   {
+    loc: `${SITE_ROOT}/web-app/ai-limitations/`,
+    changefreq: "monthly",
+    priority: "0.7",
+  },
+  {
     loc: `${SITE_ROOT}/web-app/other-comics/`,
     changefreq: "monthly",
     priority: "0.7",

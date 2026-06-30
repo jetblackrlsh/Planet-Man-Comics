@@ -24,6 +24,16 @@ https://jetblackrlsh.github.io/Planet-Man-Comics/web-app/follow/
 
 It embeds the follow.it email subscription form for new comic release updates.
 
+The AI Limitations page is available at:
+
+```text
+https://jetblackrlsh.github.io/Planet-Man-Comics/web-app/ai-limitations/
+```
+
+It explains that the comics and stories use AI as part of the creative process
+and intentionally retain visible AI mistakes, inconsistencies, and clarity
+issues.
+
 The Bonus page reads `bonus-data.json` as a static fallback. On `github.io`, it
 also fetches the live `Planet-Man Series Guide.md` from `main` and discovers
 tracked `Reference Images/` assets from the GitHub tree, then loads gallery

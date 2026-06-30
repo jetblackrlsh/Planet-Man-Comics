@@ -16,6 +16,11 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://jetblackrlsh.github.io/Planet-Man-Comics/web-app/ai-limitations/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://jetblackrlsh.github.io/Planet-Man-Comics/web-app/other-comics/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
